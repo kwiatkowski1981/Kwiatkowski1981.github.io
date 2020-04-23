@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/maciejkorsan/wtf-gulp-starter#readme",
   "devDependencies": {
+    "minimist": ">=0.2.1",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/polyfill": "^7.4.4",
