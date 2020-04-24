@@ -1,16 +1,104 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   color: #000;
   background: $background;
+  border: 16px solid #171f3f;
+}
+
+.main {
+  @include sizeXl;
+}
+.header {
+  &__heading1 {
+    font-family: Poppins;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 56px;
+    line-height: 93%;
+    align: left;
+    vertical-align: top;
+    color: #171F3F;
+  }
+  &__heading3{
+margin-top:60px;
+  }
+  &__paragraph {
+    font-family: Poppins;
+    font-style: mixed;
+    font-size: 20px;
+    line-height: 36px;
+    line-height: 120%;
+    align: left;
+    vertical-align: top;
+  }
+  &__link{
+    color:#0593FB;
+  }
+}
+
+.hero {
+  width: 780px;
+  height: 546px;
+  margin: auto;
+  margin-top: 132px;
+  &__avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    margin: 4px 0 0 4px;
+    &--box {
+      width: 120px;
+      height: 120px;
+      border: solid lightgrey 8px;
+      border-radius: 100%;
+    }
+  }
+}
+.skills {
+  width: 1094px;
+  height: 1188px;
+  margin-top: 196px;
+}
+
+.projects {
+  width: 1440px;
+  height: 1116px;
+  margin-top: 168px;
+}
+
+.footer {
+  background-color: $footerBackground;
+  width: 1440px;
+  height: 562px;
+  margin-top: 16px;
+  &__heading2 {
+    color: #fff;
+    font-family: Poppins;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 44px;
+    line-height: 92%;
+    align: left;
+    vertical-align: top;
+  }
+}
+
+.deco__line {
+  border-top: solid 4px;
+  border-width: 80px;
+  &--footer {
+    color: red;
+  }
 }
