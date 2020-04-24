@@ -354,7 +354,7 @@ body {
   line-height: 36px;
   align: left;
   vertical-align: top;
-  color: #52606D; }
+  color: #52606d; }
 
 .header__link {
   color: #0593fb; }
@@ -377,16 +377,31 @@ body {
 .skills {
   width: 1094px;
   margin-top: 196px; }
+  .skills__deco {
+    border-top: solid 6px; }
+    .skills__deco--1 {
+      border-top-color: red;
+      width: 80px; }
+    .skills__deco--2 {
+      border-top-color: blue;
+      width: 80px; }
+    .skills__deco--3 {
+      border-top-color: green;
+      width: 80px; }
 
 .projects {
   width: 1440px;
   margin-top: 168px; }
+  .projects__box {
+    border-top: solid 4px red; }
 
 .footer {
   background-color: #171F3F;
   width: 1440px;
   height: 562px;
   margin-top: 16px; }
+  .footer__box {
+    border-top: solid 4px red; }
   .footer__heading2 {
     color: #fff;
     font-family: Poppins;
@@ -401,7 +416,7 @@ body {
 
 .deco__line {
   border-left: solid 4px;
-  border-width: 80px; }
+  width: 80px; }
   .deco__line--footer {
     color: red; }
 
