@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 html {
   box-sizing: border-box;
@@ -13,7 +14,7 @@ html {
 
 body {
   color: #000;
-  background-color: #fff;
+  background-color: white;
   border: 16px solid #171f3f;
 }
 
@@ -21,14 +22,12 @@ body {
   @include sizeXl;
 }
 
-
 .header {
   &__heading1 {
-    font-family: 'Poppins';
-    font-style: SemiBold;
+    font-family: Poppins;
+    font-style: Semi-Bold;
     font-size: 40px;
     line-height: 56px;
-
     align: left;
     vertical-align: top;
     color: #171f3f;
@@ -36,8 +35,8 @@ body {
   &__heading3 {
     margin-top: 60px;
     color: #0593fb;
-    font-family: 'Poppins';
-    font-style: Lightx;
+    font-family: Poppins;
+    font-style: Medium;
     font-size: 20px;
     line-height: 36px;
     line-height: 120%;
@@ -45,13 +44,13 @@ body {
     vertical-align: top;
   }
   &__paragraph {
-    font-family: 'Poppins';
+    font-family: Poppins;
     font-style: Thin;
     font-size: 20px;
     line-height: 36px;
     align: left;
     vertical-align: top;
-    color: #52606D;
+    color: #52606d;
   }
   &__link {
     color: #0593fb;
@@ -76,15 +75,36 @@ body {
   }
 }
 
-
 .skills {
+
   width: 1094px;
   margin-top: 196px;
+  &__deco {
+    border-top: solid 6px;
+
+    &--1 {
+      border-top-color: red;
+      width: 80px;
+    }
+    &--2 {
+
+      border-top-color: blue;
+      width: 80px;
+    }
+    &--3 {
+
+      border-top-color: green;
+      width: 80px;
+    }
+  }
 }
 
 .projects {
   width: 1440px;
   margin-top: 168px;
+  &__box {
+    border-top: solid 4px red;
+  }
 }
 
 .footer {
@@ -92,6 +112,14 @@ body {
   width: 1440px;
   height: 562px;
   margin-top: 16px;
+  &__deco {
+    border-top: solid 6px;
+    &--1 {
+      border-top-color: red;
+      width: 80px;
+    }
+ 
+
   &__heading2 {
     color: #fff;
     font-family: Poppins;
@@ -109,7 +137,7 @@ body {
 
 .deco__line {
   border-left: solid 4px;
-  border-width: 80px;
+  width: 80px;
   &--footer {
     color: red;
   }
