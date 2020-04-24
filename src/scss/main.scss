@@ -13,68 +13,77 @@ html {
 
 body {
   color: #000;
-  background: $background;
+  background-color: #fff;
   border: 16px solid #171f3f;
 }
 
 .main {
   @include sizeXl;
 }
+
+
 .header {
   &__heading1 {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: SemiBold;
     font-size: 40px;
     line-height: 56px;
-    line-height: 93%;
+
     align: left;
     vertical-align: top;
-    color: #171F3F;
+    color: #171f3f;
   }
-  &__heading3{
-margin-top:60px;
-  }
-  &__paragraph {
-    font-family: Poppins;
-    font-style: mixed;
+  &__heading3 {
+    margin-top: 60px;
+    color: #0593fb;
+    font-family: 'Poppins';
+    font-style: Lightx;
     font-size: 20px;
     line-height: 36px;
     line-height: 120%;
     align: left;
     vertical-align: top;
   }
-  &__link{
-    color:#0593FB;
+  &__paragraph {
+    font-family: 'Poppins';
+    font-style: Thin;
+    font-size: 20px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
+    color: #52606D;
+  }
+  &__link {
+    color: #0593fb;
   }
 }
 
 .hero {
   width: 780px;
-  height: 546px;
   margin: auto;
   margin-top: 132px;
   &__avatar {
     width: 96px;
     height: 96px;
     border-radius: 100%;
-    margin: 4px 0 0 4px;
+    margin: 6px 0 0 6px;
     &--box {
       width: 120px;
       height: 120px;
-      border: solid lightgrey 8px;
+      border: solid lightgrey 6px;
       border-radius: 100%;
     }
   }
 }
+
+
 .skills {
   width: 1094px;
-  height: 1188px;
   margin-top: 196px;
 }
 
 .projects {
   width: 1440px;
-  height: 1116px;
   margin-top: 168px;
 }
 
@@ -93,10 +102,13 @@ margin-top:60px;
     align: left;
     vertical-align: top;
   }
+  &__paragraph {
+    color: #fff;
+  }
 }
 
 .deco__line {
-  border-top: solid 4px;
+  border-left: solid 4px;
   border-width: 80px;
   &--footer {
     color: red;
