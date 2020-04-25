@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  @include sizeBody
   color: #000;
   background-color: white;
   border: 16px solid #171f3f;
@@ -34,7 +35,7 @@ body {
   }
   &__heading3 {
     margin-top: 60px;
-    color: #0593fb;
+    color: $linkColorFB;
     font-family: Poppins;
     font-style: Medium;
     font-size: 20px;
@@ -53,7 +54,7 @@ body {
     color: #52606d;
   }
   &__link {
-    color: #0593fb;
+    color: $linkColorFB;
   }
 }
 
@@ -76,12 +77,19 @@ body {
 }
 
 .skills {
-
-  width: 1094px;
+  margin-top:100px;
+  width: 1188px;
   margin-top: 196px;
+  &__box {
+    margin-bottom: 64px;  
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
   &__deco {
     border-top: solid 6px;
-
     &--1 {
       border-top-color: red;
       width: 80px;
@@ -97,48 +105,54 @@ body {
       width: 80px;
     }
   }
+  &__paragraph {
+  
+    &--line {
+      margin-bottom:100px;
+      border-bottom: solid 2px lightgrey;
+    }
+  }
 }
 
 .projects {
   width: 1440px;
   margin-top: 168px;
   &__box {
+
     border-top: solid 4px red;
   }
 }
 
 .footer {
   background-color: $footerBackground;
-  width: 1440px;
+  width: 1408px;
   height: 562px;
   margin-top: 16px;
+  &__box{
+    @include sizeXl;
+    padding-top: 150px;
+  }
   &__deco {
     border-top: solid 6px;
     &--1 {
       border-top-color: red;
       width: 80px;
     }
- 
-
+  }
   &__heading2 {
     color: #fff;
     font-family: Poppins;
     font-style: SemiBold;
     font-size: 32px;
     line-height: 44px;
-    line-height: 92%;
     align: left;
     vertical-align: top;
   }
   &__paragraph {
     color: #fff;
-  }
+    &--FB {
+     color: $linkColorFB;
+    }
+    }
 }
 
-.deco__line {
-  border-left: solid 4px;
-  width: 80px;
-  &--footer {
-    color: red;
-  }
-}
