@@ -385,6 +385,18 @@ body {
   align: left;
   vertical-align: Top;
   color: #52606d; }
+  .list__item--1::before {
+    vertical-align: middle;
+    margin-right: 8px;
+    content: url(../assets/img/check-circle.svg); }
+  .list__item--2::before {
+    vertical-align: middle;
+    margin-right: 8px;
+    content: url(../assets/img/check-circle2.svg); }
+  .list__item--3::before {
+    vertical-align: middle;
+    margin-right: 8px;
+    content: url(../assets/img/check-circle3.svg); }
 
 .skills {
   width: 1188px;
