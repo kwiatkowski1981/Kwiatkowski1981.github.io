@@ -1,13 +1,71 @@
-@mixin sizeXl {
-  max-width: 1440px;
+
+// Colours
+$white: #fff;
+$footerBackground: #171F3F;
+$blueFB: #0593fb;
+$grey :rgba(24, 41, 67, 0.09);
+$darkgrey: #52606d;
+$darkblue: #171f3f;
+
+// Box sizing
+@mixin inBox {
+  max-width: 1188px;
   margin: auto;
 }
 
-@mixin sizeBody {
+@mixin outBox {
     max-width: 1440px;
     margin: auto;
   }
 
-$background: #fff;
-$footerBackground: #171F3F;
-$linkColorFB: #0593fb;
+// Fonts
+@mixin listParagraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    align: left;
+    vertical-align: Top;
+    color: $darkgrey;
+}
+
+@mixin paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
+}
+
+@mixin heading1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    align: left;
+    vertical-align: top;
+    color: $darkblue;
+}
+@mixin heading2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    align: left;
+    vertical-align: center; 
+}
+
+@mixin heading3 {
+    margin-top: 60px;
+    color: $blueFB;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    line-height: 120%;
+    align: left;
+    vertical-align: top;
+}
+
+

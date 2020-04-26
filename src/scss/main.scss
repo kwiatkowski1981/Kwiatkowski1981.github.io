@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -13,47 +13,28 @@ html {
 }
 
 body {
-  @include sizeBody color: #000;
-  background-color: white;
+  @include outBox;
+  background-color:  $white;
   border: 16px solid #171f3f;
 }
 
 .main {
-  @include sizeXl;
+  
 }
 
 .header {
   &__heading1 {
-    font-family: Poppins;
-    font-style: Semi-Bold;
-    font-size: 40px;
-    line-height: 56px;
-    align: left;
-    vertical-align: top;
-    color: #171f3f;
+    @include heading1;
   }
   &__heading3 {
-    margin-top: 60px;
-    color: $linkColorFB;
-    font-family: Poppins;
-    font-style: Medium;
-    font-size: 20px;
-    line-height: 36px;
-    line-height: 120%;
-    align: left;
-    vertical-align: top;
+    @include heading3;
   }
   &__paragraph {
-    font-family: Poppins;
-    font-style: Thin;
-    font-size: 20px;
-    line-height: 36px;
-    align: left;
-    vertical-align: top;
-    color: #52606d;
+    @include paragraph;
+    color: $darkgrey;
   }
   &__link {
-    color: $linkColorFB;
+    color: $blueFB;
   }
 }
 
@@ -78,15 +59,9 @@ body {
 .list {
   &__item {
     list-style: none;
-    font-family: Poppins;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 40px;
-    align: left;
-    vertical-align: Top;
-    color: #52606d;
+    @include listParagraph;
     &--1::before {
-      vertical-align: middle;
+      vertical-align: baseline;
       margin-right: 8px;
       content: url(../assets/img/check-circle.svg);
     }
@@ -104,8 +79,7 @@ body {
 }
 
 .skills {
-  width: 1188px;
-  margin: auto;
+  @include inBox;
   margin-top: 196px;
   &__box {
     display: grid;
@@ -119,7 +93,7 @@ body {
   &__decoline {
     width: 80px;
     border-radius: 8px;
-    border: 4px solid;
+    border: 2px solid;
     margin: 0;
     &--1 {
       border-color: #06c847;
@@ -132,13 +106,8 @@ body {
     }
   }
   &__paragraph {
-    font-family: Poppins;
-    font-style: SemiBold;
-    font-size: 32px;
-    line-height: 44px;
-    align: left;
-    color: #171f3f;
-    vertical-align: center;
+    @include heading2;
+    color: $darkblue;
     &--line {
       margin-bottom: 100px;
       border-bottom: solid 2px #cbd2d9;
@@ -149,47 +118,39 @@ body {
 }
 
 .projects {
+  @include outBox;
   margin-top: 168px;
-  background-color: rgba(24, 41, 67, 0.09);
+  background-color: $grey;
   &__box {
-    width: 1188px;
-    margin: auto;
+    @include inBox;
     padding: 32px 0;
   }
 }
 
 .footer {
   background-color: $footerBackground;
-  width: 1408px;
-  height: 562px;
   &__decoline {
     width: 80px;
     border-radius: 8px;
     border: 4px solid;
     margin: 0;
     &--4 {
-      border-color: $linkColorFB;
+      border-color: $blueFB;
     }
   }
   &__box {
-    @include sizeXl;
-    width: 1188px;
-    margin: auto;
-    padding-top: 120px;
+    @include inBox;
+    padding: 120px 0 60px 0;
   }
   &__heading2 {
-    color: #fff;
-    font-family: Poppins;
-    font-style: SemiBold;
-    font-size: 32px;
-    line-height: 44px;
-    align: left;
-    vertical-align: top;
+    @include heading2;
+    color: $white;
   }
   &__paragraph {
-    color: #fff;
+    @include paragraph;
+    color: $white;
     &--FB {
-      color: $linkColorFB;
+      color: $blueFB;
     }
   }
 }

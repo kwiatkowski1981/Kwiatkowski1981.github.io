@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -321,17 +321,12 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
-  color: #000;
-  background-color: white;
+  background-color: #fff;
   border: 16px solid #171f3f; }
 
-.main {
-  max-width: 1440px;
-  margin: auto; }
-
 .header__heading1 {
-  font-family: Poppins;
-  font-style: Semi-Bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 40px;
   line-height: 56px;
   align: left;
@@ -341,8 +336,8 @@ body {
 .header__heading3 {
   margin-top: 60px;
   color: #0593fb;
-  font-family: Poppins;
-  font-style: Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-size: 20px;
   line-height: 36px;
   line-height: 120%;
@@ -350,8 +345,8 @@ body {
   vertical-align: top; }
 
 .header__paragraph {
-  font-family: Poppins;
-  font-style: Thin;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
   font-size: 20px;
   line-height: 36px;
   align: left;
@@ -378,15 +373,15 @@ body {
 
 .list__item {
   list-style: none;
-  font-family: Poppins;
-  font-style: Regular;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 40px;
   align: left;
   vertical-align: Top;
   color: #52606d; }
   .list__item--1::before {
-    vertical-align: middle;
+    vertical-align: baseline;
     margin-right: 8px;
     content: url(../assets/img/check-circle.svg); }
   .list__item--2::before {
@@ -399,7 +394,7 @@ body {
     content: url(../assets/img/check-circle3.svg); }
 
 .skills {
-  width: 1188px;
+  max-width: 1188px;
   margin: auto;
   margin-top: 196px; }
   .skills__box {
@@ -419,7 +414,7 @@ body {
   .skills__decoline {
     width: 80px;
     border-radius: 8px;
-    border: 4px solid;
+    border: 2px solid;
     margin: 0; }
     .skills__decoline--1 {
       border-color: #06c847; }
@@ -428,13 +423,13 @@ body {
     .skills__decoline--3 {
       border-color: #2251cc; }
   .skills__paragraph {
-    font-family: Poppins;
-    font-style: SemiBold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     align: left;
-    color: #171f3f;
-    vertical-align: center; }
+    vertical-align: center;
+    color: #171f3f; }
     .skills__paragraph--line {
       margin-bottom: 100px;
       border-bottom: solid 2px #cbd2d9;
@@ -442,17 +437,17 @@ body {
       line-height: 48px; }
 
 .projects {
+  max-width: 1440px;
+  margin: auto;
   margin-top: 168px;
   background-color: rgba(24, 41, 67, 0.09); }
   .projects__box {
-    width: 1188px;
+    max-width: 1188px;
     margin: auto;
     padding: 32px 0; }
 
 .footer {
-  background-color: #171F3F;
-  width: 1408px;
-  height: 562px; }
+  background-color: #171F3F; }
   .footer__decoline {
     width: 80px;
     border-radius: 8px;
@@ -461,20 +456,24 @@ body {
     .footer__decoline--4 {
       border-color: #0593fb; }
   .footer__box {
-    max-width: 1440px;
+    max-width: 1188px;
     margin: auto;
-    width: 1188px;
-    margin: auto;
-    padding-top: 120px; }
+    padding: 120px 0 60px 0; }
   .footer__heading2 {
-    color: #fff;
-    font-family: Poppins;
-    font-style: SemiBold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     align: left;
-    vertical-align: top; }
+    vertical-align: center;
+    color: #fff; }
   .footer__paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
     color: #fff; }
     .footer__paragraph--FB {
       color: #0593fb; }
