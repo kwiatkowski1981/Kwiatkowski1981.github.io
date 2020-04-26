@@ -18,6 +18,23 @@ $darkblue: #171f3f;
     margin: auto;
   }
 
+// grid
+
+@mixin grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "projects projects"
+}
+
+@mixin grid4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+
+
 // Fonts
 @mixin listParagraph {
     font-family: "Poppins", sans-serif;

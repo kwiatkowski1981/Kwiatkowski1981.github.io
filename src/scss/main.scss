@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -14,12 +14,11 @@ html {
 
 body {
   @include outBox;
-  background-color:  $white;
+  background-color: $white;
   border: 16px solid #171f3f;
 }
 
 .main {
-  
 }
 
 .header {
@@ -82,8 +81,7 @@ body {
   @include inBox;
   margin-top: 196px;
   &__box {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    @include grid4;
     margin-bottom: 64px;
   }
   &__list {
@@ -122,14 +120,27 @@ body {
   margin-top: 168px;
   background-color: $grey;
   &__box {
+    @include grid2;
     @include inBox;
     padding: 32px 0;
+    @include grid4;
+  }
+  &__heading2 {
+    grid-column: 1/2;
+    @include heading2;
+    color: $darkblue;
+  }
+  &__paragraph {
+    grid-column: 1/2;
+    @include paragraph;
+    color: $darkgrey;
   }
 }
 
 .footer {
   background-color: $footerBackground;
   &__decoline {
+    grid-column: 1/2;
     width: 80px;
     border-radius: 8px;
     border: 2px solid;
@@ -140,13 +151,17 @@ body {
   }
   &__box {
     @include inBox;
+    @include grid2;
+    grid-column: 1/2;
     padding: 120px 0 60px 0;
   }
   &__heading2 {
+    grid-column: 1/2;
     @include heading2;
     color: $white;
   }
   &__paragraph {
+    grid-column: 1/2;
     @include paragraph;
     color: $white;
     &--FB {
