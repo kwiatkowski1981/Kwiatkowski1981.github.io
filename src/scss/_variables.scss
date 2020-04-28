@@ -6,6 +6,9 @@ $blueFB: #0593fb;
 $grey :rgba(24, 41, 67, 0.09);
 $darkgrey: #52606d;
 $darkblue: #171f3f;
+$black: #000;
+$lightgrey: #F5F7FA;
+
 
 // Box sizing
 @mixin inBox {
@@ -80,9 +83,16 @@ $darkblue: #171f3f;
     font-weight: 300;
     font-size: 20px;
     line-height: 36px;
-    line-height: 120%;
     align: left;
     vertical-align: top;
 }
 
-
+@mixin heading4 {
+    color: $darkblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
+}

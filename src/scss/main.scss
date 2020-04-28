@@ -115,9 +115,32 @@ body {
   }
 }
 
+.api {
+  &__main {
+    padding: 48px 48px 16px 48px;
+  }
+  &__heading4 {
+    @include heading4;
+    margin: 16px 0 8px 0;
+  }
+  &__paragraph {
+    @include listParagraph;
+    font-weight: 300;
+    margin: 0;
+  }
+  &__footer {
+    background-color: $lightgrey;
+    height: 64px;
+  }
+  &__code {
+    margin: 16px 302px 16px 48px;
+  }
+}
+
 .projects {
   @include outBox;
   margin-top: 168px;
+  padding-bottom: 128px;
   background-color: $grey;
   &__box {
     @include grid2;
@@ -143,12 +166,13 @@ body {
     margin: 0;
     padding: 0;
     &--element {
+      border-radius: 8px;
       justify-self: center;
-      width: 400px;
-      border: solid 2px green;
+      width: 580px;
+      height: 300px;
       margin: 8px;
       padding: 8px;
-      background-color: #c4c4c4;
+      background-color: $grey;
       &:hover {
         background-color: #e2e2e2;
       }
