@@ -8,7 +8,7 @@ $darkgrey: #52606d;
 $darkblue: #171f3f;
 $black: #000;
 $lightgrey: #F5F7FA;
-
+$middlegrey: #CBD2D9;
 
 // Box sizing
 @mixin inBox {
@@ -26,8 +26,6 @@ $lightgrey: #F5F7FA;
 @mixin grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "projects projects"
 }
 
 @mixin grid4 {
@@ -39,6 +37,18 @@ $lightgrey: #F5F7FA;
 
 
 // Fonts
+
+@mixin gitLink {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    align: left;
+    vertical-align: Top;
+    color: $blueFB;
+}
+
+
 @mixin listParagraph {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

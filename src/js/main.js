@@ -28,7 +28,7 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
     const repos = resp;
     console.log(repos);
     for (const repo of repos) {
-      const { description, name, html_url, download_html, } = repo
+      const { description, name, html_url, download_html, homepage} = repo
 
       list.innerHTML +=
         `<li class="projects__list--element">
@@ -38,14 +38,13 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
             <p class="api__paragraph"> ${description}</p>
             </div>
             <div class="api__footer">
-                    <a href="${html_url}" class="projects__nav--list"> 
-                    <img src="../assets/img/code1.svg" alt="code icon" class="api__code">
-                    </a>
-                    <a href="${html_url}" class="projects__nav--list">
-                    <img src="../assets/img/demo1.svg" alt="small pc" class="api__demo">
-                    </a> 
-                   
-                     <div style="clear: both;"> </br>
+            <a href="${homepage}" class="projects__nav--list1"> <p class="api__paragraph--link api__paragraph--link2"> 
+            <img src="../assets/img/demo1.svg" alt="small pc" class="api__demo"> Demo </p>
+            </a>
+            <a href="${html_url}" class="projects__nav--list2"> <p class="api__paragraph--link">
+            <img src="../assets/img/code1.svg" alt="code icon" class="api__code">  GitHub </p>
+            </a> 
+
                </div>      
              </li>`
       console.log(`it's done`);
