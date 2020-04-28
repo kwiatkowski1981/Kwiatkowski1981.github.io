@@ -340,7 +340,6 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 36px;
-  line-height: 120%;
   align: left;
   vertical-align: top; }
 
@@ -436,10 +435,42 @@ body {
       font-size: 36px;
       line-height: 48px; }
 
+.api__main {
+  padding: 48px 48px 16px 48px; }
+
+.api__heading4 {
+  color: #171f3f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  align: left;
+  vertical-align: top;
+  margin: 16px 0 8px 0; }
+
+.api__paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  align: left;
+  vertical-align: Top;
+  color: #52606d;
+  font-weight: 300;
+  margin: 0; }
+
+.api__footer {
+  background-color: #F5F7FA;
+  height: 64px; }
+
+.api__code {
+  margin: 16px 302px 16px 48px; }
+
 .projects {
   max-width: 1440px;
   margin: auto;
   margin-top: 168px;
+  padding-bottom: 128px;
   background-color: rgba(24, 41, 67, 0.09); }
   .projects__box {
     display: -ms-grid;
@@ -485,13 +516,14 @@ body {
     margin: 0;
     padding: 0; }
     .projects__list--element {
+      border-radius: 8px;
       -ms-grid-column-align: center;
           justify-self: center;
-      width: 400px;
-      border: solid 2px green;
+      width: 580px;
+      height: 300px;
       margin: 8px;
       padding: 8px;
-      background-color: #c4c4c4; }
+      background-color: rgba(24, 41, 67, 0.09); }
       .projects__list--element:hover {
         background-color: #e2e2e2; }
 
