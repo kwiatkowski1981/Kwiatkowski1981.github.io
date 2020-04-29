@@ -629,6 +629,7 @@ body {
     vertical-align: top;
     color: #fff; }
     .footer__paragraph--FB {
+      width: 340px;
       color: #0593fb;
       border-bottom: solid 2px;
       border-color: #0593fb;
