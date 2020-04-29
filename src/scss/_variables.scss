@@ -16,6 +16,11 @@ $middlegrey: #CBD2D9;
   margin: auto;
 }
 
+@mixin inBox2 {
+    max-width: 1260px;
+    margin: auto;
+  }
+
 @mixin outBox {
     max-width: 1440px;
     margin: auto;

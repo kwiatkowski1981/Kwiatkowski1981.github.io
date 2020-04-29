@@ -148,9 +148,18 @@ body {
       justify-self: center;
       width: 580px;
       height: 300px;
-      margin: 8px;
-      padding: 8px;
+      margin: 24px;
+      padding: 0px;
       background-color: $grey;
+
+      box-shadow:
+      0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+      0 3.3px 2.6px rgba(0, 0, 0, 0.048),
+      0 6.3px 5px rgba(0, 0, 0, 0.06),
+      0 11.1px 9px rgba(0, 0, 0, 0.072),
+      0 21px 17px rgba(0, 0, 0, 0.086),
+      0 50px 40px rgba(0, 0, 0, 0.12)
+    ;
     }
   }
   &__logo {
@@ -197,7 +206,7 @@ body {
     padding: 32px 0;
   }
   &__github {
-    @include inBox;
+    @include inBox2;
   }
   &__heading2 {
     @include heading2;
