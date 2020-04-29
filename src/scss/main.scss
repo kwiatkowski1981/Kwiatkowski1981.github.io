@@ -152,23 +152,6 @@ body {
  border-right: solid 2px $middlegrey;
     }
   }
-}
-
-.projects {
-  @include outBox;
-  margin-top: 168px;
-  padding-bottom: 128px;
-  background-color: $grey;
-  &__box {
-    @include grid2;
-    @include inBox;
-    padding: 32px 0;
-  }
-  &__heading2 {
-    @include heading2;
-    grid-column: 1/2;
-    color: $darkblue;
-  }
   &__list {
     @include grid2;
     list-style: none;
@@ -195,13 +178,31 @@ body {
       text-decoration: none;
     }
   }
+}
+
+.projects {
+  @include outBox;
+  margin-top: 168px;
+  padding-bottom: 128px;
+  background-color: $grey;
+  &__box {
+    @include grid2;
+    @include inBox;
+    padding: 32px 0;
+  }
+  &__github {
+    @include inBox;
+  }
+  &__heading2 {
+    @include heading2;
+    grid-column: 1/2;
+    color: $darkblue;
+  }
+
   &__paragraph {
     @include paragraph;
     grid-column: 1/2;
     color: $darkgrey;
-  }
-  &__github {
-    @include inBox;
   }
 }
 

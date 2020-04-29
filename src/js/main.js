@@ -21,7 +21,7 @@ console.log(`Hello world!`);
 //  link do sciagania repo
 //  <a href="${html_url}/archive/master.zip" class="projects__nav--download"> download </a> 
 
-const list = document.querySelector('.projects__list--js')
+const list = document.querySelector('.api__list--js')
 fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction=asc')
   .then(resp => resp.json())
   .then(resp => {
@@ -31,17 +31,17 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
       const { description, name, html_url, download_html, homepage} = repo
 
       list.innerHTML +=
-        `<li class="projects__list--element">
+        `<li class="api__list--element"> 
             <div class="api__main">
             <img src="../assets/img/git1.svg" alt="Github logo" class="api__logo">
             <h4 class="api__heading4"> ${name}</h4>
             <p class="api__paragraph"> ${description}</p>
             </div>
             <div class="api__footer">
-            <a href="${homepage}" class="projects__nav--list1"> <p class="api__paragraph--link api__paragraph--link2"> 
+            <a href="${homepage}" class="api__nav--list1"> <p class="api__paragraph--link api__paragraph--link2"> 
             <img src="../assets/img/demo1.svg" alt="small pc" class="api__demo"> Demo </p>
             </a>
-            <a href="${html_url}" class="projects__nav--list2"> <p class="api__paragraph--link">
+            <a href="${html_url}" class="api__nav--list2"> <p class="api__paragraph--link">
             <img src="../assets/img/code1.svg" alt="code icon" class="api__code">  GitHub </p>
             </a> 
 
@@ -54,4 +54,6 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
     console.log(err);
   })
 
-
+// element li zmiana klasy na api z projects
+// elementy a zmiana jak wyzej
+// zmiana queryselector zmiennej list
