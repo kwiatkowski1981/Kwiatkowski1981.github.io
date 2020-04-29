@@ -53,7 +53,3 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
   .catch(err => {
     console.log(err);
   })
-
-// element li zmiana klasy na api z projects
-// elementy a zmiana jak wyzej
-// zmiana queryselector zmiennej list
