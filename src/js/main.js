@@ -33,7 +33,7 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
       list.innerHTML +=
         `<li class="api__list--element"> 
             <div class="api__main">
-            <img src="../assets/img/git1.svg" alt="Github logo" class="api__logo">
+            <img src="../assets/img/git2.svg" alt="Github logo" class="api__logo">
             <h4 class="api__heading4"> ${name}</h4>
             <p class="api__paragraph"> ${description}</p>
             </div>

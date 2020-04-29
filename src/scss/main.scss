@@ -28,7 +28,7 @@ body {
   &__heading3 {
     @include heading3;
     border-bottom: solid 2px;
-    border-color:  $blueFB;
+    border-color: $blueFB;
     width: fit-content;
   }
   &__paragraph {
@@ -138,6 +138,24 @@ body {
     @include heading4;
     margin: 16px 0 8px 0;
   }
+  &__list {
+    @include grid2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &--element {
+      border-radius: 8px;
+      justify-self: center;
+      width: 580px;
+      height: 300px;
+      margin: 8px;
+      padding: 8px;
+      background-color: $grey;
+    }
+  }
+  &__logo {
+    color: $darkblue;
+  }
   &__main {
     padding: 48px 48px 16px 48px;
   }
@@ -152,22 +170,7 @@ body {
     &--link2 {
       @include gitLink;
       padding-right: 32px;
- border-right: solid 2px $middlegrey;
-    }
-  }
-  &__list {
-    @include grid2;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    &--element {
-      border-radius: 8px;
-      justify-self: center;
-      width: 580px;
-      height: 300px;
-      margin: 8px;
-      padding: 8px;
-      background-color: $grey;
+      border-right: solid 2px $middlegrey;
     }
   }
   &__nav {
@@ -238,7 +241,7 @@ body {
     &--FB {
       color: $blueFB;
       border-bottom: solid 2px;
-      border-color:  $blueFB;
+      border-color: $blueFB;
       width: fit-content;
     }
   }
