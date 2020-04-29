@@ -495,6 +495,38 @@ body {
     padding-right: 32px;
     border-right: solid 2px #CBD2D9; }
 
+.api__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .api__list--element {
+    border-radius: 8px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 580px;
+    height: 300px;
+    margin: 8px;
+    padding: 8px;
+    background-color: rgba(24, 41, 67, 0.09); }
+
+.api__nav {
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center; }
+  .api__nav--list1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    text-decoration: none; }
+  .api__nav--list2 {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    text-decoration: none; }
+
 .projects {
   max-width: 1440px;
   margin: auto;
@@ -509,6 +541,9 @@ body {
     max-width: 1188px;
     margin: auto;
     padding: 32px 0; }
+  .projects__github {
+    max-width: 1188px;
+    margin: auto; }
   .projects__heading2 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -520,36 +555,6 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: #171f3f; }
-  .projects__list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .projects__list--element {
-      border-radius: 8px;
-      -ms-grid-column-align: center;
-          justify-self: center;
-      width: 580px;
-      height: 300px;
-      margin: 8px;
-      padding: 8px;
-      background-color: rgba(24, 41, 67, 0.09); }
-  .projects__nav {
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
-    place-self: center; }
-    .projects__nav--list1 {
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-column: 2/3;
-      text-decoration: none; }
-    .projects__nav--list2 {
-      -ms-grid-column: 3;
-      grid-column: 3/3;
-      text-decoration: none; }
   .projects__paragraph {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
@@ -561,9 +566,6 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: #52606d; }
-  .projects__github {
-    max-width: 1188px;
-    margin: auto; }
 
 .footer {
   background-color: #171F3F; }
