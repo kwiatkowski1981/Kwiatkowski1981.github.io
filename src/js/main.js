@@ -26,7 +26,6 @@ fetch('https://api.github.com/users/kwiatkowski1981/repos?sort=updated&direction
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
-    console.log(repos);
     for (const repo of repos) {
       const { description, name, html_url, download_html, homepage} = repo
 

@@ -30,6 +30,9 @@ body {
     border-bottom: solid 2px;
     border-color: $blueFB;
     width: fit-content;
+    &--frame {
+      width: 340px;
+    }
   }
   &__paragraph {
     @include paragraph;
