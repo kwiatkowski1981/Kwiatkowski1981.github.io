@@ -429,6 +429,13 @@ body {
       border-color: #653cad; }
     .skills__decoline--3 {
       border-color: #2251cc; }
+    .skills__decoline--box {
+      max-width: 1188px;
+      margin: auto;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; }
   .skills__paragraph {
     font-family: "Poppins", sans-serif;
     font-weight: 600;

@@ -106,6 +106,10 @@ body {
     &--3 {
       border-color: #2251cc;
     }
+    &--box {
+      @include inBox;
+      @include grid2;
+    }
   }
   &__paragraph {
     @include heading2;
