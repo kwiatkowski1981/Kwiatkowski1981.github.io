@@ -44,7 +44,7 @@ body {
 }
 
 .hero {
-  width: 780px;
+  width: $heroDesktop;
   margin: auto;
   margin-top: 132px;
   &__avatar {
@@ -160,14 +160,9 @@ body {
       padding: 0px;
       background-color: $grey;
 
-      box-shadow:
-      0 1.4px 1.1px rgba(0, 0, 0, 0.034),
-      0 3.3px 2.6px rgba(0, 0, 0, 0.048),
-      0 6.3px 5px rgba(0, 0, 0, 0.06),
-      0 11.1px 9px rgba(0, 0, 0, 0.072),
-      0 21px 17px rgba(0, 0, 0, 0.086),
-      0 50px 40px rgba(0, 0, 0, 0.12)
-    ;
+      box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048),
+        0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
+        0 50px 40px rgba(0, 0, 0, 0.12);
     }
   }
   &__logo {
@@ -261,6 +256,47 @@ body {
       border-bottom: solid 2px;
       border-color: $blueFB;
       width: fit-content;
+    }
+  }
+}
+// iphone 5 /SE to iphone x resolutions
+@media (max-width: 375px) and (min-width: 320px) {
+  body {
+    background-color: $white;
+    border: 4px solid #171f3f;
+  }
+
+  .header {
+    &__heading1 {
+      @include heading1Mobile;
+    }
+    &__heading3 {
+      @include heading3Mobile;
+      &--frame {
+        width: 235px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobile;
+      color: $darkgrey;
+    }
+  }
+
+  .hero {
+    width: $heroMobile;
+    margin: auto;
+    margin-top: 66px;
+    &__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%;
+      margin: 6px 0 0 6px;
+      &--box {
+        width: 120px;
+        height: 120px;
+        border: solid lightgrey 6px;
+        border-radius: 100%;
+      }
     }
   }
 }

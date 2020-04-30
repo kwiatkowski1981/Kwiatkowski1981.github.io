@@ -11,6 +11,10 @@ $lightgrey: #F5F7FA;
 $middlegrey: #CBD2D9;
 
 // Box sizing
+$heroDesktop: 780px;
+$heroMobile: 320px;
+
+
 @mixin inBox {
   max-width: 1188px;
   margin: auto;
@@ -27,6 +31,13 @@ $middlegrey: #CBD2D9;
   }
 
 // grid
+
+
+@mixin gridMobile1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 
 @mixin grid2 {
     display: grid;
@@ -108,6 +119,54 @@ $middlegrey: #CBD2D9;
     font-weight: 600;
     font-size: 20px;
     line-height: 36px;
+    align: left;
+    vertical-align: top;
+}
+
+@mixin heading1Mobile {
+    color: $darkblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
+}
+@mixin heading2Mobile {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    align: left;
+    vertical-align: center; 
+}
+
+@mixin heading3Mobile {
+    margin-top: 40px;
+    color: $blueFB;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    align: left;
+    vertical-align: top;
+}
+
+@mixin heading4Mobile {
+    color: $darkblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    align: left;
+    vertical-align: top;
+}
+
+@mixin paragraphMobile {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 26px;
     align: left;
     vertical-align: top;
 }
