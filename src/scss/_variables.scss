@@ -1,5 +1,5 @@
 
-// Colours
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        C O L O R S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 $white: #fff;
 $footerBackground: #171F3F;
 $blueFB: #0593fb;
@@ -9,11 +9,15 @@ $darkblue: #171f3f;
 $black: #000;
 $lightgrey: #F5F7FA;
 $middlegrey: #CBD2D9;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        B O X       S I Z I N G      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-// Box sizing
 $heroDesktop: 780px;
 $heroMobile: 320px;
 
+@mixin inBoxMobile {
+    max-width: 312px;
+    margin: auto;
+  }
 
 @mixin inBox {
   max-width: 1188px;
@@ -30,7 +34,7 @@ $heroMobile: 320px;
     margin: auto;
   }
 
-// grid
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         G R I D       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 @mixin gridMobile1 {
@@ -52,7 +56,7 @@ $heroMobile: 320px;
 
 
 
-// Fonts
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       F O N T S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 @mixin gitLink {
     font-family: "Poppins", sans-serif;
@@ -123,6 +127,8 @@ $heroMobile: 320px;
     vertical-align: top;
 }
 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        F O N T S     M O B I L E      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 @mixin heading1Mobile {
     color: $darkblue;
     font-family: "Poppins", sans-serif;
@@ -135,8 +141,8 @@ $heroMobile: 320px;
 @mixin heading2Mobile {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 22px;
+    line-height: 32px;
     align: left;
     vertical-align: center; 
 }
@@ -146,7 +152,7 @@ $heroMobile: 320px;
     color: $blueFB;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     align: left;
     vertical-align: top;
@@ -156,8 +162,8 @@ $heroMobile: 320px;
     color: $darkblue;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 22px;
     align: left;
     vertical-align: top;
 }
@@ -166,7 +172,17 @@ $heroMobile: 320px;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     align: left;
     vertical-align: top;
+}
+
+@mixin listParagraphMobile {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    align: left;
+    vertical-align: Top;
+    color: $darkgrey;
 }

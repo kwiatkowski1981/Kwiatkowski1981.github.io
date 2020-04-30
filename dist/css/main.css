@@ -654,17 +654,17 @@ body {
     color: #0593fb;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     align: left;
     vertical-align: top; }
     .header__heading3--frame {
-      width: 235px; }
+      width: 300px; }
   .header__paragraph {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     align: left;
     vertical-align: top;
     color: #52606d; }
@@ -681,6 +681,69 @@ body {
         width: 120px;
         height: 120px;
         border: solid lightgrey 6px;
-        border-radius: 100%; } }
+        border-radius: 100%; }
+  .list__item {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    align: left;
+    vertical-align: Top;
+    color: #52606d; }
+    .list__item--1::before {
+      vertical-align: baseline;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle.svg); }
+    .list__item--2::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle2.svg); }
+    .list__item--3::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle3.svg); }
+  .skills {
+    max-width: 312px;
+    margin: auto;
+    margin-top: 120px; }
+    .skills__box {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      margin-bottom: 32px; }
+    .skills__list {
+      padding-left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap; }
+    .skills__decoline {
+      width: 40px;
+      border-radius: 8px; }
+      .skills__decoline--box {
+        max-width: 312px;
+        margin: auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; }
+    .skills__paragraph {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 32px;
+      align: left;
+      vertical-align: center;
+      color: #171f3f; }
+      .skills__paragraph--line {
+        margin-bottom: 60px;
+        border-bottom: solid 2px #CBD2D9;
+        font-size: 36px;
+        line-height: 48px; } }
 
 /*# sourceMappingURL=main.css.map */

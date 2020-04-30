@@ -273,7 +273,7 @@ body {
     &__heading3 {
       @include heading3Mobile;
       &--frame {
-        width: 235px;
+        width: 300px;
       }
     }
     &__paragraph {
@@ -299,4 +299,66 @@ body {
       }
     }
   }
+
+
+  .list {
+  
+    &__item {
+
+      list-style: none;
+      @include listParagraphMobile;
+      &--1::before {
+        vertical-align: baseline;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle.svg);
+      }
+      &--2::before {
+        vertical-align: middle;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle2.svg);
+      }
+      &--3::before {
+        vertical-align: middle;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle3.svg);
+      }
+    }
+  }
+
+
+  .skills {
+    @include inBoxMobile;
+    margin-top: 120px;
+    &__box {
+      @include gridMobile1;
+      margin-bottom: 32px;
+    }
+    &__list {
+      padding-left: 0;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    &__decoline {
+      width: 40px;
+      border-radius: 8px;
+      &--box {
+        @include inBoxMobile;
+        @include gridMobile1;
+      }
+    }
+    &__paragraph {
+      @include heading2Mobile;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 60px;
+        border-bottom: solid 2px $middlegrey;
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+  }
+
+
+
+
 }
