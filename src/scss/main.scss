@@ -411,7 +411,7 @@ body {
     }
     &__paragraph {
       @include paragraphMobile;
-      color: $blueFB;
+     
       &--FB {
         @include  heading3Mobile;
         width: 300px;
