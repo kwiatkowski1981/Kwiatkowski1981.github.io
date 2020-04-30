@@ -260,7 +260,7 @@ body {
   }
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-@media (max-width: 414px) and (min-width: 320px) {
+@media (max-width: 375px) and (min-width: 320px) {
   body {
     background-color: $white;
     border: 4px solid #171f3f;
@@ -394,7 +394,6 @@ body {
     }
   }
 
-
   .footer {
     &__decoline {
       width: 40px;
@@ -402,25 +401,20 @@ body {
     &__box {
       @include inBoxMobile;
       @include gridMobile1;
-  
+
       padding: 60px 0 60px 0;
     }
     &__heading2 {
       @include heading2Mobile;
-
     }
     &__paragraph {
       @include paragraphMobile;
-     
+
       &--FB {
-        @include  heading3Mobile;
+        @include heading3Mobile;
         width: 300px;
         width: fit-content;
       }
     }
   }
-
-
-
-
 }
