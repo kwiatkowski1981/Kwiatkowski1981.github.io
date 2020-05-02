@@ -59,6 +59,9 @@ body {
       border-radius: 100%;
     }
   }
+  &__link {
+    text-decoration: none;
+  }
 }
 
 .skills {
@@ -250,6 +253,9 @@ body {
     @include heading2;
     color: $white;
   }
+  &__link {
+    text-decoration: none;
+  }
   &__paragraph {
     grid-column: 1/2;
     @include paragraph;
@@ -423,7 +429,6 @@ body {
     &__box {
       @include inBoxMobile;
       @include gridMobile1;
-
       padding: 60px 0 60px 0;
     }
     &__heading2 {
