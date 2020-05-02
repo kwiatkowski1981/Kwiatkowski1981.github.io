@@ -72,25 +72,27 @@ body {
   &__list {
     @include grid3;
     padding-top: 16px;
+    margin-left: 32px;
     &--item {
       width: 260px;
       list-style: none;
       @include listParagraph;
-      &--1::before {
-        vertical-align: baseline;
-        margin-right: 8px;
-        content: url(../assets/img/check-circle.svg);
-      }
-      &--2::before {
-        vertical-align: middle;
-        margin-right: 8px;
-        content: url(../assets/img/check-circle2.svg);
-      }
-      &--3::before {
-        vertical-align: middle;
-        margin-right: 8px;
-        content: url(../assets/img/check-circle3.svg);
-      }
+    }
+    // check img.svg difriend colors
+    &--1::before {
+      vertical-align: baseline;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle.svg);
+    }
+    &--2::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle2.svg);
+    }
+    &--3::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle3.svg);
     }
   }
 
