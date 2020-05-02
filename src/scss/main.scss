@@ -154,6 +154,8 @@ body {
   }
   &__list {
     @include grid2;
+    row-gap: 32px;
+    column-gap: 48px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -162,7 +164,7 @@ body {
       justify-self: center;
       width: 580px;
       height: 300px;
-      margin: 32px;
+      margin:  24px 0;
       padding: 0px;
       background-color: $grey;
 
@@ -177,7 +179,7 @@ body {
     height: 48px;
   }
   &__main {
-    padding: 48px 48px 48px 48px;
+    padding: 32px 48px 48px 48px;
   }
   &__paragraph {
     @include listParagraph;
@@ -255,6 +257,7 @@ body {
   }
   &__link {
     text-decoration: none;
+    grid-column: 1/2;
   }
   &__paragraph {
     grid-column: 1/2;
