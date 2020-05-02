@@ -370,6 +370,8 @@ body {
       height: 120px;
       border: solid lightgrey 6px;
       border-radius: 100%; }
+  .hero__link {
+    text-decoration: none; }
 
 .skills {
   max-width: 1188px;
@@ -602,6 +604,8 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #fff; }
+  .footer__link {
+    text-decoration: none; }
   .footer__paragraph {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
