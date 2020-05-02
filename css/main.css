@@ -377,46 +377,54 @@ body {
       border: solid lightgrey 6px;
       border-radius: 100%; }
 
-.list__item {
-  list-style: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 40px;
-  align: left;
-  vertical-align: Top;
-  color: #52606d; }
-  .list__item--1::before {
-    vertical-align: baseline;
-    margin-right: 8px;
-    content: url(../assets/img/check-circle.svg); }
-  .list__item--2::before {
-    vertical-align: middle;
-    margin-right: 8px;
-    content: url(../assets/img/check-circle2.svg); }
-  .list__item--3::before {
-    vertical-align: middle;
-    margin-right: 8px;
-    content: url(../assets/img/check-circle3.svg); }
-
 .skills {
   max-width: 1188px;
   margin: auto;
   margin-top: 196px; }
   .skills__box {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1fr 1fr;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin-bottom: 64px; }
-  .skills__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap; }
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 64px; }
+  .skills__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 64px;
+       -moz-column-gap: 64px;
+            column-gap: 64px;
+    padding-top: 16px;
+    margin-left: 32px; }
+    .skills__list--item {
+      width: 260px;
+      list-style: none;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 40px;
+      align: left;
+      vertical-align: Top;
+      color: #52606d; }
+    .skills__list--1::before {
+      vertical-align: baseline;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle.svg); }
+    .skills__list--2::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle2.svg); }
+    .skills__list--3::before {
+      vertical-align: middle;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle3.svg); }
   .skills__decoline {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -776,6 +784,12 @@ body {
     vertical-align: top;
     margin: 16px 0 4px 0; }
   .api__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -783,7 +797,7 @@ body {
     .api__list--element {
       border-radius: 4px;
       width: 312px;
-      height: 236px;
+      height: 232px;
       margin: 16px auto;
       display: -webkit-box;
       display: -ms-flexbox;
