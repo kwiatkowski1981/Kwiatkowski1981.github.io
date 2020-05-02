@@ -61,39 +61,39 @@ body {
   }
 }
 
-.list {
-  &__item {
-    list-style: none;
-    @include listParagraph;
-    &--1::before {
-      vertical-align: baseline;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle.svg);
-    }
-    &--2::before {
-      vertical-align: middle;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle2.svg);
-    }
-    &--3::before {
-      vertical-align: middle;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle3.svg);
-    }
-  }
-}
-
 .skills {
   @include inBox;
   margin-top: 196px;
   &__box {
-    @include grid4;
+    @include flex1;
+
     margin-bottom: 64px;
   }
   &__list {
-    display: flex;
-    flex-flow: column wrap;
+    @include grid3;
+    padding-top: 16px;
+    &--item {
+      width: 260px;
+      list-style: none;
+      @include listParagraph;
+      &--1::before {
+        vertical-align: baseline;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle.svg);
+      }
+      &--2::before {
+        vertical-align: middle;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle2.svg);
+      }
+      &--3::before {
+        vertical-align: middle;
+        margin-right: 8px;
+        content: url(../assets/img/check-circle3.svg);
+      }
+    }
   }
+
   &__decoline {
     grid-column: 1/3;
     width: 80px;
@@ -352,7 +352,7 @@ body {
   .api {
     &__footer {
       @include grid2;
-   
+
       height: 48px;
     }
     &__heading4Mobile {
@@ -360,15 +360,17 @@ body {
       margin: 16px 0 4px 0;
     }
     &__list {
+      display: flex;
+      align-items: stretch;
       @include gridMobile1;
       &--element {
         border-radius: 4px;
         width: 312px;
-        height: 236px;
+        height: 232px;
         margin: 16px auto;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between
+        justify-content: space-between;
       }
     }
     &__logo {
@@ -395,13 +397,11 @@ body {
       }
     }
     &__nav {
-      
       &--list1 {
         margin: 0;
         padding-top: 8px;
         height: 48px;
         grid-column: 1/2;
- 
       }
       &--list2 {
         margin: 0;
