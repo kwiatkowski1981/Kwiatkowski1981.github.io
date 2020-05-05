@@ -1,0 +1,408 @@
+
+/*
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+*/
+
+@media (max-width: 414px) {
+  body {
+    background-color: $white;
+    border: none;
+  }
+
+  .header {
+    &__heading1 {
+      @include heading1Mobile;
+    }
+    &__heading3 {
+      @include heading3Mobile;
+      &--frame {
+        width: 300px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobile;
+      color: $darkgrey;
+    }
+  }
+
+  .hero {
+    width: $heroMobile;
+    margin: auto;
+    margin-top: 66px;
+    padding: 0 4px;
+  }
+
+  .skills {
+    @include inBoxMobile;
+    margin-top: 120px;
+    &__box {
+      @include gridMobile1;
+      margin-bottom: 32px;
+    }
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      display: flex;
+      flex-flow: column wrap;
+      &--item {
+        @include listParagraphMobile;
+      }
+    }
+    &__decoline {
+      width: 40px;
+      border-radius: 8px;
+      &--box {
+        @include inBoxMobile;
+        @include gridMobile1;
+      }
+    }
+    &__paragraph {
+      @include heading2Mobile;
+      margin-bottom: 0;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .projects {
+    @include gridMobile1;
+    margin-top: 84px;
+    padding-bottom: 64px;
+    &__box {
+      @include inBoxMobile;
+      @include gridMobile1;
+      padding: 0;
+    }
+    &__github {
+      @include inBoxMobile;
+    }
+    &__heading2 {
+      @include heading2Mobile;
+      grid-column: 1/2;
+    }
+
+    &__paragraph {
+      @include paragraphMobile;
+      grid-column: 1/2;
+    }
+  }
+
+  .api {
+    &__footer {
+      @include grid2;
+
+      height: 48px;
+    }
+    &__heading4 {
+      @include heading4Mobile;
+      margin: 16px 0 4px 0;
+    }
+    &__list {
+      display: flex;
+      align-items: stretch;
+      @include gridMobile1;
+      &--element {
+        border-radius: 4px;
+        width: 312px;
+        height: 232px;
+        margin: 16px auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+    &__main {
+      padding: 16px 16px 16px 16px;
+    }
+    &__paragraph {
+      @include listParagraphMobile;
+      font-weight: 300;
+      margin: 0;
+      &--link {
+        @include gitLink;
+        padding-right: 10px;
+        margin: 0;
+      }
+      &--link2 {
+        @include gitLink;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-right: solid 2px $middlegrey;
+      }
+    }
+    &__nav {
+      &--list1 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 1/2;
+      }
+      &--list2 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 2/2;
+        place-self: center;
+      }
+    }
+  }
+
+  .footer {
+      padding: 0 8px;
+    &__decoline {
+      width: 40px;
+    }
+    &__box {
+      @include inBoxMobile;
+      @include gridMobile1;
+      padding: 60px 0 60px 0;
+    }
+    &__heading2 {
+      @include heading2Mobile;
+    }
+    &__paragraph {
+      @include paragraphMobile;
+
+      &--FB {
+        @include heading3Mobile;
+        width: 300px;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iPad to desktop resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+*/
+
+
+@media  (max-width: 900px) {
+  body {
+    background-color: $white;
+    border: 8px solid #171f3f;
+  }
+
+  .hero {
+    width: $heroDesktopSmall;
+  }
+  
+
+
+  .skills {
+    @include inBoxDesktopSmall;
+    margin-top: 196px;
+    &__box {
+      @include flex1;
+      margin-bottom: 64px;
+    }
+    &__list {
+      @include grid3;
+      padding-top: 16px;
+  
+      &--item {
+        width: 260px;
+        @include listParagraph;
+      }
+    }
+  
+    &__decoline {
+      grid-column: 1/3;
+      width: 80px;
+      border-radius: 8px;
+      border: 2px solid;
+      margin: 0px;
+      &--1 {
+        border-color: #06c847;
+      }
+      &--2 {
+        border-color: #653cad;
+      }
+      &--3 {
+        border-color: #2251cc;
+      }
+      &--box {
+        @include inBoxDesktopSmall;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 100px;
+        border-bottom: solid 2px #cbd2d9;
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+  }
+  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< w tej sekcji powinna byc jedna kolumna z duzymi kartami wysrodkowana  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  .api {
+    &__code {
+      vertical-align: text-bottom;
+    }
+    &__demo {
+      vertical-align: text-bottom;
+    }
+    &__footer {
+      @include grid4;
+      justify-items: center;
+      height: 64px;
+      background-color: $lightgrey;
+      border-radius: 0 0 8px 8px;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+    &__heading4 {
+      @include heading4;
+      margin: 16px 0 8px 0;
+    }
+    &__list {
+      @include gridMobile1;
+      row-gap: 32px;
+      column-gap: 48px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &--element {
+        border-radius: 8px;
+        justify-self: center;
+        width: 450px;
+        height: 300px;
+        margin:  24px 0;
+        padding: 0px;
+      }
+    }
+    &__logo {
+      color: $darkblue;
+      width: 48px;
+      height: 48px;
+    }
+    &__main {
+      padding: 32px 48px 48px 48px;
+    }
+    &__paragraph {
+      @include listParagraph;
+      font-weight: 300;
+      &--link {
+        @include gitLink;
+        padding-right: 8px;
+      }
+      &--link2 {
+        @include gitLink;
+        padding-right: 32px;
+        border-right: solid 2px $middlegrey;
+      }
+    }
+    &__nav {
+      place-self: center;
+      &--list1 {
+        grid-column: 2/3;
+        text-decoration: none;
+      }
+      &--list2 {
+        grid-column: 3/3;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .projects {
+    @include outBoxDesktopSmall;
+    margin-top: 168px;
+    padding-bottom: 128px;
+    background-color: $grey;
+    &__box {
+      @include gridMobile1;
+      @include inBoxDesktopSmall;
+      padding: 32px 0;
+    }
+    &__github {
+      @include inBox2DesktopSmall;
+    }
+    &__heading2 {
+      @include heading2;
+      grid-column: 1/2;
+      color: $darkblue;
+    }
+  
+    &__paragraph {
+      @include paragraph;
+      grid-column: 1/2;
+      color: $darkgrey;
+    }
+  }
+  
+  .footer {
+   @include outBoxDesktopSmall;
+    background-color: $footerBackground;
+    &__decoline {
+      width: 80px;
+      border-radius: 8px;
+      border: 2px solid;
+      margin: 0;
+      &--4 {
+        border-color: $blueFB;
+      }
+    }
+    &__box {
+      @include inBoxDesktopSmall;
+      @include grid2;
+  
+      padding: 120px 0 60px 0;
+    }
+    &__heading2 {
+      grid-column: 1/2;
+      @include heading2;
+      color: $white;
+    }
+    &__link {
+      text-decoration: none;
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      grid-column: 1/2;
+      @include paragraph;
+      color: $white;
+      &--FB {
+        width: 340px;
+        color: $blueFB;
+        border-bottom: solid 2px;
+        border-color: $blueFB;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> desktop small to big desktop resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************

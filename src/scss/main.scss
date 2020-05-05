@@ -143,7 +143,7 @@ body {
     justify-items: center;
     height: 64px;
     background-color: $lightgrey;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 24px 24px;
     &:hover {
       background-color: #e2e2e2;
     }
@@ -160,11 +160,11 @@ body {
     margin: 0;
     padding: 0;
     &--element {
-      border-radius: 8px;
+      border-radius: 24px;
       justify-self: center;
       width: 580px;
       height: 300px;
-      margin:  24px 0;
+      margin: 24px 0;
       padding: 0px;
       background-color: $grey;
 
@@ -208,17 +208,17 @@ body {
 }
 
 .projects {
-  @include outBox;
+
   margin-top: 168px;
   padding-bottom: 128px;
   background-color: $grey;
   &__box {
     @include grid2;
     @include inBox;
-    padding: 32px 0;
+    padding: 24px 0;
   }
   &__github {
-    @include inBox2;
+    @include inBox;
   }
   &__heading2 {
     @include heading2;
@@ -234,6 +234,7 @@ body {
 }
 
 .footer {
+ 
   background-color: $footerBackground;
   &__decoline {
     width: 80px;
@@ -272,11 +273,18 @@ body {
     }
   }
 }
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-@media (max-width: 414px) {
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+
+@media  (max-width: 414px) {
   body {
     background-color: $white;
     border: none;
+    max-width: 414px
   }
 
   .header {
@@ -366,16 +374,16 @@ body {
 
       height: 48px;
     }
-    &__heading4Mobile {
+    &__heading4 {
       @include heading4Mobile;
       margin: 16px 0 4px 0;
     }
     &__list {
-      display: flex;
-      align-items: stretch;
+
       @include gridMobile1;
+
       &--element {
-        border-radius: 4px;
+        border-radius: 24px;
         width: 312px;
         height: 232px;
         margin: 16px auto;
@@ -425,7 +433,7 @@ body {
   }
 
   .footer {
-      padding: 0 8px;
+    padding: 0 8px;
     &__decoline {
       width: 40px;
     }
@@ -449,4 +457,577 @@ body {
   }
 }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone X  to iPad resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone X  to iPad resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+
+@media screen and (min-width: 414px) and (max-width: 550px) {
+  body {
+    background-color: $white;
+    border: none;
+   max-width: 550px;
+  }
+.main {
+
+}
+
+  .header {
+    &__heading1 {
+      @include heading1MobileBig;
+    }
+    &__heading3 {
+      @include heading3MobileBig;
+      &--frame {
+        width: 370px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+      color: $darkgrey;
+    }
+  }
+
+  .hero {
+    width: $heroMobileBig;
+    margin: auto;
+    margin-top: 66px;
+    padding: 0 4px;
+  }
+
+  .skills {
+    @include outBoxMobileBig;
+    padding-left: 16px;
+    margin-top: 120px;
+    &__box {
+      @include flex1;
+      margin-bottom: 32px;
+    }
+    &__list {
+      @include grid3MobileBig;
+      padding-top: 16px;
+      padding-left: 0;
+      list-style: none;
+      &--item {
+        @include listParagraphMobileBig;
+      }
+    }
+    &__decoline {
+      width: 40px;
+      border-radius: 8px;
+      &--box {
+        @include outBoxMobileBig;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2MobileBig;
+      margin-bottom: 0;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .projects {
+    @include outBoxMobileBig;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 84px;
+    padding-bottom: 64px;
+    &__box {
+      @include inBoxMobileBig2;
+      @include gridMobile1;
+      padding-bottom: 64px;
+      padding-left: 16px;
+    }
+    &__github {
+      @include inBoxMobileBig;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+      grid-column: 1/2;
+    }
+
+    &__paragraph {
+      @include paragraphMobileBig;
+      grid-column: 1/2;
+    }
+  }
+
+  .api {
+    &__footer {
+      @include grid2;
+
+      height: 48px;
+    }
+    &__heading4 {
+      @include heading4MobileBig;
+      margin: 16px 0 8px 0;
+    }
+    &__list {
+      @include gridMobile1;
+      margin: auto;
+      column-gap: 16px;
+      row-gap: 32px;
+      &--element {
+        border-radius: 24px;
+        width: 400px;
+        height: 222px;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+    &__main {
+      padding: 16px 16px 16px 16px;
+    }
+    &__paragraph {
+      @include listParagraphMobileBig;
+      font-weight: 300;
+      margin: 0;
+      &--link {
+        @include gitLink;
+        padding-right: 10px;
+        margin: 0;
+      }
+      &--link2 {
+        @include gitLink;
+        padding-left: 48px;
+        padding-right: 48px;
+        border-right: solid 2px $middlegrey;
+      }
+    }
+    &__nav {
+      &--list1 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 1/2;
+      }
+      &--list2 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 2/2;
+        place-self: center;
+      }
+    }
+  }
+
+  .footer {
+    @include outBoxMobileBig;
+    padding: 0 8px;
+    &__decoline {
+      width: 40px;
+    }
+    &__box {
+      @include inBoxMobileBig;
+      @include gridMobile1;
+      padding: 60px 0 60px 16px;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+
+      &--FB {
+        @include heading3MobileBig;
+        width: 300px;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone X  to XSmax resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+  body {
+    background-color: $white;
+    border: none;
+   max-width: 650px;
+  }
+ 
+
+  .header {
+    &__heading1 {
+      @include heading1MobileBig;
+    }
+    &__heading3 {
+      @include heading3MobileBig;
+      &--frame {
+        width: 370px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+      color: $darkgrey;
+    }
+  }
+
+  .hero {
+    width: $heroMobileBig;
+    margin: auto;
+    margin-top: 66px;
+    padding: 0 4px;
+  }
+
+  .skills {
+    @include outBoxMobileBig2;
+    padding-left: 16px;
+    margin-top: 120px;
+    &__box {
+      @include flex1;
+      margin-bottom: 32px;
+    }
+    &__list {
+      @include grid3MobileBig;
+      padding-top: 16px;
+      padding-left: 0;
+      list-style: none;
+      &--item {
+        @include listParagraphMobileBig;
+      }
+    }
+    &__decoline {
+      width: 40px;
+      border-radius: 8px;
+      &--box {
+        @include outBoxMobileBig2;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2MobileBig;
+      margin-bottom: 0;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .projects {
+    @include outBoxMobileBig2;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 84px;
+    padding-bottom: 64px;
+    &__box {
+      @include inBoxMobileBig2;
+      @include gridMobile1;
+      padding-bottom: 64px;
+      padding-left: 16px;
+    }
+    &__github {
+      @include inBoxMobileBig3;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+      grid-column: 1/2;
+    }
+
+    &__paragraph {
+      @include paragraphMobileBig;
+      grid-column: 1/2;
+    }
+  }
+
+  .api {
+    &__footer {
+      @include grid4;
+
+      height: 48px;
+    }
+    &__heading4 {
+      @include heading4;
+      margin: 16px 0 8px 0;
+    }
+    &__list {
+      @include gridMobile1;
+      margin: auto;
+      column-gap: 16px;
+      row-gap: 32px;
+      &--element {
+        border-radius: 24px;
+        width: 500px;
+        height: 222px;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+    &__main {
+      padding: 16px 16px 16px 16px;
+    }
+    &__paragraph {
+      @include listParagraphMobileBig;
+      font-weight: 300;
+      margin: 0;
+      &--link {
+        @include gitLink;
+        padding-right: 10px;
+        margin: 0;
+      }
+      &--link2 {
+        @include gitLink;
+        padding-left: 8px;
+        padding-right: 16px;
+        border-right: solid 2px $middlegrey;
+      }
+    }
+    &__nav {
+      &--list1 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 2/3;
+      }
+      &--list2 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 3/3;
+        place-self: center;
+      }
+    }
+  }
+
+  .footer {
+    @include outBoxMobileBig2;
+    padding: 0 8px;
+    &__decoline {
+      width: 40px;
+    }
+    &__box {
+      @include inBoxMobileBig3;
+      @include gridMobile1;
+      padding: 60px 0 60px 24px;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+
+      &--FB {
+        @include heading3MobileBig;
+        width: 300px;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone X  to iPad resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+
+@media screen and (min-width: 650px) and (max-width: 1100px) {
+  body {
+    background-color: $white;
+    border: none;
+   max-width: 1100px;
+   border: 8px solid #171f3f;
+  }
+  
+
+  .header {
+    &__heading1 {
+      @include heading1MobileBig;
+    }
+    &__heading3 {
+      @include heading3MobileBig;
+      &--frame {
+        width: 370px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+      color: $darkgrey;
+    }
+  }
+
+  .hero {
+    width: $heroMobileBig;
+    margin: auto;
+    margin-top: 66px;
+    padding: 0 4px;
+  }
+
+  .skills {
+    @include outBoxDesktopSmall;
+    padding-left: 16px;
+    margin-top: 120px;
+    &__box {
+      @include flex1;
+      margin-bottom: 32px;
+    }
+    &__list {
+      @include grid3MobileBig;
+      padding-top: 16px;
+      padding-left: 0;
+      list-style: none;
+      &--item {
+        @include listParagraphMobileBig;
+      }
+    }
+    &__decoline {
+      width: 40px;
+      border-radius: 8px;
+      &--box {
+        @include outBoxDesktopSmall;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2MobileBig;
+      margin-bottom: 0;
+      color: $darkblue;
+      &--line {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .projects {
+    @include inBox2DesktopSmall;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 84px;
+    padding-bottom: 64px;
+    &__box {
+      @include inBoxDesktopSmall;
+      @include grid2;
+      padding-bottom: 64px;
+      padding-left: 16px;
+    }
+    &__github {
+      @include inBoxDesktopSmall;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+      grid-column: 1/2;
+    }
+
+    &__paragraph {
+      @include paragraphMobileBig;
+      grid-column: 1/2;
+    }
+  }
+
+  .api {
+    &__footer {
+      @include grid4;
+
+      height: 48px;
+    }
+    &__heading4 {
+      @include heading4;
+      margin: 16px 0 8px 0;
+    }
+    &__list {
+      @include grid2;
+      margin: auto;
+      column-gap: 16px;
+      row-gap: 32px;
+      &--element {
+        border-radius: 24px;
+        width: 400px;
+        height: 222px;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+    &__main {
+      padding: 16px 16px 16px 16px;
+    }
+    &__paragraph {
+      @include listParagraphMobileBig;
+      font-weight: 300;
+      margin: 0;
+      &--link {
+        @include gitLink;
+        padding-right: 8px;
+        padding-left: 2px;
+      
+        margin: 0;
+      }
+      &--link2 {
+        @include gitLink;
+ 
+        border-right: solid 2px $middlegrey;
+      }
+    }
+    &__nav {
+      &--list1 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 2/3;
+      }
+      &--list2 {
+        margin: 0;
+        padding-top: 8px;
+        height: 48px;
+        grid-column: 3/3;
+        place-self: center;
+      }
+    }
+  }
+
+  .footer {
+    @include inBox2DesktopSmall;
+    padding: 0;
+    &__decoline {
+      width: 40px;
+    }
+    &__box {
+      @include inBoxDesktopSmall;
+      @include grid2;
+      padding: 60px 16px 60px 16px;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+
+      &--FB {
+        @include heading3MobileBig;
+        width: 300px;
+        width: fit-content;
+      }
+    }
+  }
+}

@@ -1,179 +1,278 @@
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        C O L O R S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-$white: #fff;
-$footerBackground: #171F3F;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         C O L O R S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$footerBackground: #171f3f;
 $blueFB: #0593fb;
-$grey :rgba(24, 41, 67, 0.09);
+$grey: rgba(24, 41, 67, 0.09);
 $darkgrey: #52606d;
 $darkblue: #171f3f;
 $black: #000;
-$lightgrey: #F5F7FA;
-$middlegrey: #CBD2D9;
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        B O X       S I Z I N G      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$lightgrey: #f5f7fa;
+$middlegrey: #cbd2d9;
+$white: #fff;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      B O X       S I Z I N G      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 $heroDesktop: 780px;
+$heroDesktopSmall: 650px;
 $heroMobile: 320px;
+$heroMobileBig: 550px;
+
+//900 >>> small desktops outbox inbox = 650 czyli to samo co small desktop tylko z marginem
 
 @mixin inBoxMobile {
-    max-width: 312px;
-    margin: auto;
-  }
+  width: 312px;
+  margin: auto;
+}
+// >>>>>>>>>>>>>>>>>>>>>>  big mobile     <<<<<<<<<<<<<<<
+@mixin outBoxMobileBig {
+  width: 550px;
+}
 
+@mixin inBoxMobileBig {
+  width: 542px;
+  margin: auto;
+}
+
+
+@mixin outBoxMobileBig2 {
+  width: 650px;
+}
+
+@mixin inBoxMobileBig2 {
+  width: 100vw;
+}
+@mixin inBoxMobileBig3 {
+  width: 630px;
+  margin: auto;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>  small desktop     <<<<<<<<<<<<<<<
+
+@mixin inBoxDesktopSmall {
+  width: 880px;
+  margin: auto;
+}
+
+@mixin inBox2DesktopSmall {
+  width: 100vw;
+}
+
+@mixin outBoxDesktopSmall {
+  width: 900px;
+  margin: auto;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>  desktop    <<<<<<<<<<<<<<<<<<<<<
 @mixin inBox {
-  max-width: 1188px;
+  width: 1188px;
   margin: auto;
 }
 
 @mixin inBox2 {
-    max-width: 1260px;
-    margin: auto;
-  }
-
-@mixin outBox {
-    max-width: 1440px;
-    margin: auto;
-  }
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         G R I D       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-@mixin gridMobile1 {
-    display: grid;
-    grid-template-columns: 1fr;
+  width: 1260px;
+  margin: auto;
 }
 
+@mixin outBox {
+  width: 1440px;
+  margin: auto;
+}
 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    G R I D       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+// >>>>>>>>>>>>>>>>>>>>>>>  small mobile   <<<<<<<<<<<<<<<<<<<<<
+
+@mixin gridMobile1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@mixin gridMobile1Test {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: 1rem;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>  big mobile    <<<<<<<<<<<<<<<<<<<<<<
+@mixin grid3MobileBig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>> small desktop    <<<<<<<<<<<<<<<<<<<<<
+
+// >>>>>>>>>>>>>>>>>>>>>>>  desktop    <<<<<<<<<<<<<<<<<<<<<<<<<<
 @mixin grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @mixin grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
 }
 
 @mixin grid4 {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       F L E X     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        F L E X     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 @mixin flex1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-
-
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       F O N T S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        F O N T S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 @mixin gitLink {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: $blueFB;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: $blueFB;
 }
 
-
 @mixin listParagraph {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 40px;
-    color: $darkgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  color: $darkgrey;
 }
 
 @mixin paragraph {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 @mixin heading1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 56px;
-    color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: $darkblue;
 }
 @mixin heading2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 @mixin heading3 {
-    margin-top: 60px;
-    color: $blueFB;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+  margin-top: 60px;
+  color: $blueFB;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 @mixin heading4 {
-    color: $darkblue;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
 }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        F O N T S     M O B I L E      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      F O N T S     M O B I L E      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 @mixin heading1Mobile {
-    color: $darkblue;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 36px;
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
 }
 @mixin heading2Mobile {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 @mixin heading3Mobile {
-    margin-top: 40px;
-    color: $blueFB;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
+  margin-top: 40px;
+  color: $blueFB;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @mixin heading4Mobile {
-    color: $darkblue;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 @mixin paragraphMobile {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @mixin listParagraphMobile {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 26px;
-    color: $darkgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkgrey;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    F O N T S     M O B I L E   B I G  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+@mixin heading1MobileBig {
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+}
+@mixin heading2MobileBig {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+@mixin heading3MobileBig {
+  margin-top: 40px;
+  color: $blueFB;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@mixin heading4MobileBig {
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin paragraphMobileBig {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@mixin listParagraphMobileBig {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkgrey;
 }
