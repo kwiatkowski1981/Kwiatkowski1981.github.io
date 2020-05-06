@@ -767,15 +767,10 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    -webkit-column-gap: 48px;
-       -moz-column-gap: 48px;
-            column-gap: 48px; }
+    grid-template-columns: 1fr 1fr; }
     .api__list--element {
-      width: 580px;
-      height: 300px;
-      margin: 24px 0; }
+      width: 564px;
+      height: 300px; }
   .api__logo {
     width: 48px;
     height: 48px; }

@@ -387,12 +387,9 @@ body {
     }
     &__list {
       @include grid2;
-      row-gap: 32px;
-      column-gap: 48px;
       &--element {
-        width: 580px;
+        width: 564px;
         height: 300px;
-        margin: 24px 0;
       }
     }
     &__logo {
