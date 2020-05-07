@@ -47,7 +47,7 @@ $heroMobileBig: 550px;
 // >>>>>>>>>>>>>>>>>>>>>>  small desktop     <<<<<<<<<<<<<<<
 
 @mixin inBoxDesktopSmall {
-  width: 880px;
+  width: 800px;
   margin: auto;
 }
 
@@ -55,10 +55,20 @@ $heroMobileBig: 550px;
   width: 100vw;
 }
 
+
+@mixin inBox3DesktopSmall {
+  width: 750px;
+} 
+
+
 @mixin outBoxDesktopSmall {
   width: 900px;
   margin: auto;
 }
+
+@mixin inBoxfooter {
+  width: 884px;
+} 
 
 // >>>>>>>>>>>>>>>>>>>>>>>  desktop    <<<<<<<<<<<<<<<<<<<<<
 @mixin inBox {
@@ -180,6 +190,56 @@ $heroMobileBig: 550px;
   font-size: 20px;
   line-height: 36px;
 }
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    F O N T S     D E S K T O P     S M A L L  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+@mixin heading1DesktopSmall {
+  color: $darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+}
+@mixin heading2DesktopSmall {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+@mixin heading3DesktopSmall {
+  margin-top: 40px;
+  color: $blueFB;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@mixin heading4DesktopSmall{
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin paragraphDesktopSmall {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@mixin listParagraphDesktopSmall {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: $darkgrey;
+}
+
+
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      F O N T S     M O B I L E      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 

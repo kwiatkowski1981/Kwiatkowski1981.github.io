@@ -12,149 +12,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  min-width: 320px;
-  background-color: $white;
-  border: none;
-}
-
-.header {
-  &__heading1 {
-    @include heading1Mobile;
-  }
-  &__heading3 {
-    @include heading3Mobile;
-    border-bottom: solid 2px;
-    border-color: $blueFB;
-    width: fit-content;
-    &--frame {
-      width: 300px;
-    }
-  }
-  &__paragraph {
-    @include paragraphMobile;
-    color: $darkgrey;
-  }
-  &__link {
-    color: $blueFB;
-  }
-}
-
-.hero {
-  width: $heroMobile;
-  margin: auto;
-  margin-top: 66px;
-  padding: 0 4px;
-  &__avatar {
-    width: 96px;
-    height: 96px;
-    border-radius: 100%;
-    margin: 6px 0 0 6px;
-    &--box {
-      width: 120px;
-      height: 120px;
-      border: solid lightgrey 6px;
-      border-radius: 100%;
-    }
-  }
-  &__link {
-    text-decoration: none;
-  }
-}
-
-.skills {
-  @include inBoxMobile;
-  margin-top: 120px;
-  &__box {
-    @include gridMobile1;
-    margin-bottom: 32px;
-  }
-  &__list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 24px;
-    display: flex;
-    flex-flow: column wrap;
-    &--item {
-      @include listParagraphMobile;
-    }
-    // check img.svg difriend colors
-    &--1::before {
-      vertical-align: sub;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle.svg);
-    }
-    &--2::before {
-      vertical-align: sub;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle2.svg);
-    }
-    &--3::before {
-      vertical-align: sub;
-      margin-right: 8px;
-      content: url(../assets/img/check-circle3.svg);
-    }
-  }
-
-  &__decoline {
-    grid-column: 1/3;
-    width: 40px;
-    border-radius: 8px;
-    border: 2px solid;
-    margin: 0px;
-    &--1 {
-      border-color: #06c847;
-    }
-    &--2 {
-      border-color: #653cad;
-    }
-    &--3 {
-      border-color: #2251cc;
-    }
-    &--box {
-      @include inBoxMobile;
-      @include gridMobile1;
-    }
-  }
-  &__paragraph {
-    @include heading2Mobile;
-    margin-bottom: 0;
-    color: $darkblue;
-    &--line {
-      margin-bottom: 60px;
-      border-bottom: solid 2px #cbd2d9;
-      font-size: 36px;
-      line-height: 48px;
-    }
-  }
-}
-
-.projects {
-  @include gridMobile1;
-  margin-top: 84px;
-  padding-bottom: 64px;
-  background-color: $grey;
-  &__box {
-    @include inBoxMobile;
-    @include gridMobile1;
-    padding: 0;
-  }
-  &__github {
-    @include inBoxMobile;
-  }
-  &__heading2 {
-    @include heading2Mobile;
-    grid-column: 1/2;
-    color: $darkblue;
-  }
-
-  &__paragraph {
-    @include paragraphMobile;
-    grid-column: 1/2;
-    color: $darkgrey;
-  }
-}
-
 .api {
   &__code {
     vertical-align: text-bottom;
@@ -243,6 +100,12 @@ body {
   }
 }
 
+body {
+  min-width: 320px;
+  background-color: $white;
+  border: none;
+}
+
 .footer {
   padding: 0 8px;
   background-color: $footerBackground;
@@ -284,46 +147,255 @@ body {
   }
 }
 
+.header {
+  &__heading1 {
+    @include heading1Mobile;
+  }
+  &__heading3 {
+    @include heading3Mobile;
+    border-bottom: solid 2px;
+    border-color: $blueFB;
+    width: fit-content;
+    &--frame {
+      width: 300px;
+    }
+  }
+  &__paragraph {
+    @include paragraphMobile;
+    color: $darkgrey;
+  }
+  &__link {
+    color: $blueFB;
+  }
+}
+
+.hero {
+  width: $heroMobile;
+  margin: auto;
+  margin-top: 66px;
+  padding: 0 4px;
+  &__avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    margin: 6px 0 0 6px;
+    &--box {
+      width: 120px;
+      height: 120px;
+      border: solid lightgrey 6px;
+      border-radius: 100%;
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.projects {
+  @include gridMobile1;
+  margin-top: 84px;
+  padding-bottom: 64px;
+  background-color: $grey;
+  &__box {
+    @include inBoxMobile;
+    @include gridMobile1;
+    padding: 0;
+  }
+  &__github {
+    @include inBoxMobile;
+  }
+  &__heading2 {
+    @include heading2Mobile;
+    grid-column: 1/2;
+    color: $darkblue;
+  }
+
+  &__paragraph {
+    @include paragraphMobile;
+    grid-column: 1/2;
+    color: $darkgrey;
+  }
+}
+
+.skills {
+  @include inBoxMobile;
+  margin-top: 120px;
+  &__box {
+    @include gridMobile1;
+    margin-bottom: 32px;
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
+    display: flex;
+    flex-flow: column wrap;
+    &--item {
+      @include listParagraphMobile;
+    }
+    // check img.svg difriend colors
+    &--1::before {
+      vertical-align: sub;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle.svg);
+    }
+    &--2::before {
+      vertical-align: sub;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle2.svg);
+    }
+    &--3::before {
+      vertical-align: sub;
+      margin-right: 8px;
+      content: url(../assets/img/check-circle3.svg);
+    }
+  }
+
+  &__decoline {
+    grid-column: 1/3;
+    width: 40px;
+    border-radius: 8px;
+    border: 2px solid;
+    margin: 0px;
+    &--1 {
+      border-color: #06c847;
+    }
+    &--2 {
+      border-color: #653cad;
+    }
+    &--3 {
+      border-color: #2251cc;
+    }
+    &--box {
+      @include inBoxMobile;
+      @include gridMobile1;
+    }
+  }
+  &__paragraph {
+    @include heading2Mobile;
+    margin-bottom: 0;
+    color: $darkblue;
+    &--line {
+      margin-bottom: 60px;
+      border-bottom: solid 2px #cbd2d9;
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+}
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone X  to iPad resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-// *******************************************************************************************************************************************************
-// *******************************************************************************************************************************************************
-// *******************************************************************************************************************************************************
-// *******************************************************************************************************************************************************
-
-@media (min-width: 1188px) {
-
-  body {
-    @include outBox;
-    background-color: $white;
-    border: 16px solid #171f3f;
+@media (min-width: 900px) {
+  .api {
+    &__footer {
+      @include grid2;
+      height: 48px;
+      justify-items: center;
+      border-radius: 0 0 24px 24px;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+    &__heading4 {
+      @include heading4MobileBig;
+      margin: 16px 0 4px 0;
+    }
+    &__list {
+      @include grid2;
+      row-gap: 16px;
+      column-gap: 48px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &--element {
+        border-radius: 24px;
+        width: 350px;
+        height: 232px;
+        margin: 16px auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+    &__main {
+      padding: 24px 24px 16px 24px;
+    }
+    &__paragraph {
+      @include listParagraphMobileBig;
+      font-weight: 300;
+      margin: 0;
+      &--link {
+        padding-right: 10px;
+        margin: 0;
+      }
+      &--link2 {
+        padding-left: 32px;
+        padding-right: 48px;
+      }
+    }
   }
 
-  .main {
+  body {
+    @include outBoxDesktopSmall;
+    background-color: $white;
+    border: 8px solid #171f3f;
+  }
+
+  .footer {
+    @include inBoxfooter;
+    &__decoline {
+      width: 80px;
+      margin: 0;
+    }
+    &__box {
+      @include inBox3DesktopSmall;
+      @include grid2;
+      padding: 120px 0 60px 0;
+    }
+    &__heading2 {
+      grid-column: 1/2;
+      @include heading2DesktopSmall;
+    }
+    &__link {
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      grid-column: 1/2;
+      @include paragraphDesktopSmall;
+      &--FB {
+        @include heading4DesktopSmall;
+        width: 306px;
+      }
+    }
   }
 
   .header {
     &__heading1 {
-      @include heading1;
+      @include heading1DesktopSmall;
     }
     &__heading3 {
-      @include heading3;
+      @include heading4DesktopSmall;
+
       &--frame {
-        width: 335px;
+        width: 306px;
       }
     }
     &__paragraph {
-      @include paragraph;
+      @include paragraphDesktopSmall;
     }
   }
 
   .hero {
-    width: $heroDesktop;
+    width: $heroMobileBig;
     margin: auto;
     margin-top: 132px;
     &__avatar {
@@ -340,40 +412,69 @@ body {
     }
   }
 
+  .projects {
+    margin-top: 128px;
+    padding-bottom: 128px;
+    &__box {
+      @include gridMobile1;
+      @include inBox3DesktopSmall;
+      padding: 24px 0;
+    }
+    &__github {
+      @include inBox3DesktopSmall;
+    }
+    &__heading2 {
+      @include heading2DesktopSmall;
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      @include paragraphDesktopSmall;
+      grid-column: 1/2;
+    }
+  }
+
   .skills {
-    @include inBox;
+    @include inBox3DesktopSmall;
     margin-top: 196px;
     &__box {
       @include flex1;
       margin-bottom: 96px;
     }
     &__list {
+      padding-left: 16px;
       @include grid3;
       padding-top: 16px;
       &--item {
         width: 260px;
         list-style: none;
-        @include listParagraph;
+        @include listParagraphDesktopSmall;
+      }
     }
-  }
     &__decoline {
       grid-column: 1/2;
       width: 80px;
       margin: 0px;
       &--box {
-        @include inBox;
+        @include inBox3DesktopSmall;
         @include grid2;
       }
     }
     &__paragraph {
-      @include heading2;
+      @include heading2DesktopSmall;
       &--line {
         margin-bottom: 100px;
       }
     }
   }
+}
 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iPad to small desktop resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
 
+@media (min-width: 1188px) {
   .api {
     &__footer {
       @include grid4;
@@ -422,25 +523,10 @@ body {
     }
   }
 
-  .projects {
-    margin-top: 128px;
-    padding-bottom: 128px;
-    &__box {
-      @include grid2;
-      @include inBox;
-      padding: 24px 0;
-    }
-    &__github {
-      @include inBox;
-    }
-    &__heading2 {
-      @include heading2;
-      grid-column: 1/2;
-    }
-    &__paragraph {
-      @include paragraph;
-      grid-column: 1/2;
-    }
+  body {
+    @include outBox;
+    background-color: $white;
+    border: 16px solid #171f3f;
   }
 
   .footer {
@@ -465,6 +551,93 @@ body {
       @include paragraph;
       &--FB {
         width: 325px;
+      }
+    }
+  }
+
+  .header {
+    &__heading1 {
+      @include heading1;
+    }
+    &__heading3 {
+      @include heading3;
+      &--frame {
+        width: 335px;
+      }
+    }
+    &__paragraph {
+      @include paragraph;
+    }
+  }
+
+  .hero {
+    width: $heroDesktop;
+    margin: auto;
+    margin-top: 132px;
+    &__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%;
+      margin: 6px 0 0 6px;
+      &--box {
+        width: 120px;
+        height: 120px;
+        border: solid lightgrey 6px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .projects {
+    margin-top: 128px;
+    padding-bottom: 128px;
+    &__box {
+      @include grid2;
+      @include inBox;
+      padding: 24px 0;
+    }
+    &__github {
+      @include inBox;
+    }
+    &__heading2 {
+      @include heading2;
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      @include paragraph;
+      grid-column: 1/2;
+    }
+  }
+
+  .skills {
+    @include inBox;
+    margin-top: 196px;
+    &__box {
+      @include flex1;
+      margin-bottom: 96px;
+    }
+    &__list {
+      @include grid3;
+      padding-top: 16px;
+      &--item {
+        width: 260px;
+        list-style: none;
+        @include listParagraph;
+      }
+    }
+    &__decoline {
+      grid-column: 1/2;
+      width: 80px;
+      margin: 0px;
+      &--box {
+        @include inBox;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2;
+      &--line {
+        margin-bottom: 100px;
       }
     }
   }
