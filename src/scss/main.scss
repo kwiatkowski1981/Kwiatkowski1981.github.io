@@ -284,7 +284,202 @@ body {
   }
 }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iphone 5 /SE to iphone x resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Big Mobiles  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+// *******************************************************************************************************************************************************
+
+@media (min-width: 650px) {
+
+
+  .api {
+    &__footer {
+      @include grid4;
+      justify-items: center;
+      height: 64px;
+      border-radius: 0 0 24px 24px;
+    }
+    &__heading4 {
+      @include heading4;
+      margin: 16px 0 8px 0;
+    }
+    &__list {
+      @include gridMobile1;
+      row-gap: 48px;
+      &--element {
+        width: 540px;
+        height: 260px;
+      }
+    }
+    &__logo {
+      width: 48px;
+      height: 48px;
+    }
+    &__main {
+      padding: 32px 48px 48px 48px;
+    }
+    &__paragraph {
+      @include listParagraph;
+      font-weight: 300;
+      &--link {
+        @include gitLink;
+        padding-right: 8px;
+      }
+      &--link2 {
+        @include gitLink;
+        padding-right: 16px;
+      }
+    }
+    &__nav {
+      &--list1 {
+        grid-column: 2/3;
+        align-self: center;
+      }
+      &--list2 {
+        grid-column: 3/3;
+      }
+    }
+  }
+
+
+
+  body {
+    @include outBoxMobileBig;
+    background-color: $white;
+    border: 4px solid #171f3f;
+  }
+
+
+  .footer {
+    @include footerMobileBig;
+    &__decoline {
+      width: 80px;
+      margin: 0;
+    }
+    &__box {
+      @include inBoxMobileBig;
+      @include gridMobile1;
+      padding: 120px 0 60px 0;
+    }
+    &__heading2 {
+      grid-column: 1/2;
+      @include heading2MobileBig;
+    }
+    &__link {
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      grid-column: 1/2;
+      @include paragraphMobileBig;
+      &--FB {
+        @include heading4MobileBig;
+        width: 286px;
+        color:$blueFB;
+      }
+    }
+  }
+
+  .header {
+    &__heading1 {
+      @include heading1MobileBig;
+    }
+    &__heading3 {
+      @include heading4MobileBig;
+      color:$blueFB;
+
+      &--frame {
+        width: 286px;
+      }
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+    }
+  }
+
+  .hero {
+    width: $heroMobileBig;
+    margin: auto;
+    margin-top: 132px;
+    &__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%;
+      margin: 6px 0 0 6px;
+      &--box {
+        width: 120px;
+        height: 120px;
+        border: solid lightgrey 6px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .projects {
+    margin-top: 128px;
+    padding-bottom: 128px;
+    &__box {
+      @include gridMobile1;
+      @include inBoxMobileBig;
+      padding: 24px 0;
+    }
+    &__github {
+      @include inBoxMobileBig;
+    }
+    &__heading2 {
+      @include heading2MobileBig;
+      grid-column: 1/2;
+    }
+    &__paragraph {
+      @include paragraphMobileBig;
+      grid-column: 1/2;
+    }
+  }
+
+
+  .skills {
+    @include inBoxMobileBig;
+    margin-top: 196px;
+    &__box {
+      @include flex1;
+      margin-bottom: 96px;
+    }
+    &__list {
+      padding-left: 16px;
+      @include grid3;
+      padding-top: 16px;
+      &--item {
+        width: 260px;
+        list-style: none;
+        @include listParagraphMobileBig;
+      }
+    }
+    &__decoline {
+      grid-column: 1/2;
+      width: 80px;
+      margin: 0px;
+      &--box {
+        @include inBoxMobileBig;
+        @include grid2;
+      }
+    }
+    &__paragraph {
+      @include heading2MobileBig;
+      &--line {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Small Desktops  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
@@ -468,7 +663,7 @@ body {
   }
 }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> iPad to small desktop resolutions  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Desktops  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************
 // *******************************************************************************************************************************************************

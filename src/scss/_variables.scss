@@ -21,26 +21,20 @@ $heroMobileBig: 550px;
   width: 312px;
   margin: auto;
 }
-// >>>>>>>>>>>>>>>>>>>>>>  big mobile     <<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>  big mobile     <<<<<<<<<<<<<<<<<<<
 @mixin outBoxMobileBig {
-  width: 550px;
+  width: 650px;
+  margin: auto;
 }
 
 @mixin inBoxMobileBig {
-  width: 542px;
+  width: 550px;
   margin: auto;
 }
 
 
-@mixin outBoxMobileBig2 {
-  width: 650px;
-}
-
-@mixin inBoxMobileBig2 {
-  width: 100vw;
-}
-@mixin inBoxMobileBig3 {
-  width: 630px;
+@mixin footerMobileBig {
+  width: 642px;
   margin: auto;
 }
 

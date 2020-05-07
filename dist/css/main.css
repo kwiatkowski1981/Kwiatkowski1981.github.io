@@ -655,6 +655,232 @@ body {
       font-size: 36px;
       line-height: 48px; }
 
+@media (min-width: 650px) {
+  .api__footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: center;
+    height: 64px;
+    border-radius: 0 0 24px 24px; }
+  .api__heading4 {
+    color: #171f3f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 16px 0 8px 0; }
+  .api__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 48px; }
+    .api__list--element {
+      width: 540px;
+      height: 260px; }
+  .api__logo {
+    width: 48px;
+    height: 48px; }
+  .api__main {
+    padding: 32px 48px 48px 48px; }
+  .api__paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #52606d;
+    font-weight: 300; }
+    .api__paragraph--link {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #0593fb;
+      padding-right: 8px; }
+    .api__paragraph--link2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #0593fb;
+      padding-right: 16px; }
+  .api__nav--list1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row-align: center;
+        align-self: center; }
+  .api__nav--list2 {
+    -ms-grid-column: 3;
+    grid-column: 3/3; }
+  body {
+    width: 650px;
+    margin: auto;
+    background-color: #fff;
+    border: 4px solid #171f3f; }
+  .footer {
+    width: 642px;
+    margin: auto; }
+    .footer__decoline {
+      width: 80px;
+      margin: 0; }
+    .footer__box {
+      width: 550px;
+      margin: auto;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      padding: 120px 0 60px 0; }
+    .footer__heading2 {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 32px; }
+    .footer__link {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; }
+    .footer__paragraph {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-size: 15px;
+      line-height: 24px; }
+      .footer__paragraph--FB {
+        color: #171f3f;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        width: 286px;
+        color: #0593fb; }
+  .header__heading1 {
+    color: #171f3f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px; }
+  .header__heading3 {
+    color: #171f3f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0593fb; }
+    .header__heading3--frame {
+      width: 286px; }
+  .header__paragraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 24px; }
+  .hero {
+    width: 550px;
+    margin: auto;
+    margin-top: 132px; }
+    .hero__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%;
+      margin: 6px 0 0 6px; }
+      .hero__avatar--box {
+        width: 120px;
+        height: 120px;
+        border: solid lightgrey 6px;
+        border-radius: 100%; }
+  .projects {
+    margin-top: 128px;
+    padding-bottom: 128px; }
+    .projects__box {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      width: 550px;
+      margin: auto;
+      padding: 24px 0; }
+    .projects__github {
+      width: 550px;
+      margin: auto; }
+    .projects__heading2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 32px;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; }
+    .projects__paragraph {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-size: 15px;
+      line-height: 24px;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; }
+  .skills {
+    width: 550px;
+    margin: auto;
+    margin-top: 196px; }
+    .skills__box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 96px; }
+    .skills__list {
+      padding-left: 16px;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      -webkit-column-gap: 64px;
+         -moz-column-gap: 64px;
+              column-gap: 64px;
+      padding-top: 16px; }
+      .skills__list--item {
+        width: 260px;
+        list-style: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        color: #52606d; }
+    .skills__decoline {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+      width: 80px;
+      margin: 0px; }
+      .skills__decoline--box {
+        width: 550px;
+        margin: auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; }
+    .skills__paragraph {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 32px; }
+      .skills__paragraph--line {
+        margin-bottom: 100px; } }
+
 @media (min-width: 900px) {
   .api__footer {
     display: -ms-grid;
