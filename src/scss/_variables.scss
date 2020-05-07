@@ -66,8 +66,14 @@ $heroMobileBig: 550px;
   margin: auto;
 }
 
-@mixin inBoxfooter {
+@mixin footerDesktopSmall {
   width: 884px;
+  margin: auto;
+} 
+
+@mixin footerDesktop {
+  width: 1424px;
+  margin: auto;
 } 
 
 // >>>>>>>>>>>>>>>>>>>>>>>  desktop    <<<<<<<<<<<<<<<<<<<<<

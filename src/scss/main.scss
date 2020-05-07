@@ -351,14 +351,14 @@ body {
   }
 
   .footer {
-    @include inBoxfooter;
+    @include footerDesktopSmall;
     &__decoline {
       width: 80px;
       margin: 0;
     }
     &__box {
       @include inBox3DesktopSmall;
-      @include grid2;
+      @include gridMobile1;
       padding: 120px 0 60px 0;
     }
     &__heading2 {
@@ -530,6 +530,7 @@ body {
   }
 
   .footer {
+    @include footerDesktop;
     &__decoline {
       width: 80px;
       margin: 0;
