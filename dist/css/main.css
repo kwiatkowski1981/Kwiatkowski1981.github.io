@@ -348,8 +348,8 @@ body {
 .header__paragraph {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   color: #52606d; }
 
 .header__link {
@@ -477,8 +477,8 @@ body {
   .projects__paragraph {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -637,8 +637,8 @@ body {
     grid-column: 1/2;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     color: #fff; }
     .footer__paragraph--FB {
       margin-top: 40px;
