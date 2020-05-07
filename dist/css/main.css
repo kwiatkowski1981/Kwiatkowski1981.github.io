@@ -386,7 +386,7 @@ body {
   .skills__list {
     list-style: none;
     padding-left: 0;
-    margin-top: 0;
+    margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
