@@ -533,11 +533,22 @@ body {
         margin: 0;
       }
       &--link2 {
-        padding-left: 32px;
-        padding-right: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+    &__nav {
+      &--list1 {
+        grid-column: 1/2;
+      }
+      &--list2 {
+        grid-column: 2/2;
       }
     }
   }
+
+
+ 
 
   body {
     @include outBoxDesktopSmall;
@@ -672,7 +683,7 @@ body {
 @media (min-width: 1188px) {
   .api {
     &__footer {
-      @include grid4;
+      @include grid5;
       justify-items: center;
       height: 64px;
       border-radius: 0 0 24px 24px;
@@ -701,10 +712,11 @@ body {
       &--link {
         @include gitLink;
         padding-right: 8px;
+   
       }
       &--link2 {
         @include gitLink;
-        padding-right: 24px;
+        padding-right: 28px;
       }
     }
     &__nav {
