@@ -1,5 +1,5 @@
 
-![Portfolio Hero-section screenshot](https://kwiatkowski1981.github.io/src/assets/img/portfolio.png)
+![Portfolio Hero-section screenshot](https://kwiatkowski1981.github.io/dist/assets/img/portfolio-screen.png)
 
 
 # wtf-gulp-starter
