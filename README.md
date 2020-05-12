@@ -1,3 +1,7 @@
+
+![Portfolio Hero-section screenshot](https://kwiatkowski1981.github.io/assets/img/portfolio.png)
+
+
 # wtf-gulp-starter
 
 `npm install -g gulp-cli`
