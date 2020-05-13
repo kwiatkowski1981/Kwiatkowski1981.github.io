@@ -1,4 +1,4 @@
-![my-buisness-card](https://github.com/kwiatkowski1981/buisness-card/blob/master/img/portfolio.png)
+![my-buisness-card](https://Kwiatkowski1981.github.io/blob/source/src/assets/img/portfolio.png)
 
 The first project in which I "translated" human into machine language.
 The project was prototyped in FIGMA.
