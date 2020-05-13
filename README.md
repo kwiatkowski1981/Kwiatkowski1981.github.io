@@ -2,7 +2,7 @@
 
 The first project in which I "translated" human into machine language.
 The project was prototyped in FIGMA.
-[zapraszam do obejżenia](https://kwiatkowski1981.github.io/buisness-card/) 
+[zapraszam do obejżenia](https://kwiatkowski1981.github.io/) 
 
 
 ## The project was created for:
