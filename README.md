@@ -2,16 +2,16 @@
 
 The first project in which I "translated" human into machine language.
   The project was prototyped in FIGMA.
-[zapraszam do obejżenia](https://kwiatkowski1981.github.io/) 
+[go to this site]  (https://kwiatkowski1981.github.io/) 
 
 
-## The project was created for:
+# The project was created for:
 [WTF: Co ten frontend](https://cotenfrontend.pl/)   from : Maciek Korsan 2020.
 
 
 
 
-# wtf-gulp-starter from  [Maciek Korsan](https://github.com/maciejkorsan)
+## wtf-gulp-starter from  [Maciek Korsan](https://github.com/maciejkorsan)
 
 `npm install -g gulp-cli`
 
