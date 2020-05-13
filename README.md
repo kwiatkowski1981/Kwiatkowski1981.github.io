@@ -1,4 +1,4 @@
-![hero section screen of my portfolio site.](https://Kwiatkowski1981.github.io/dist/assets/img/portfolio.png)
+![hero section screen of my portfolio site.](https://github.com/kwiatkowski1981/Kwiatkowski1981.github.io/blob/source/dist/assets/img/portfolio.png)
 
 The first project in which I "translated" human into machine language.
   The project was prototyped in FIGMA.
