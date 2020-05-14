@@ -2,7 +2,7 @@
 
 The first project in which I "translated" human into machine language.
   The project was prototyped in FIGMA.
-[go to this site]  (https://kwiatkowski1981.github.io/) 
+[go to this site](https://kwiatkowski1981.github.io/) 
 
 
 # The project was created for:
