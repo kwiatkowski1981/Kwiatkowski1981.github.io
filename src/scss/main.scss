@@ -26,7 +26,7 @@ html {
     background-color: $lightgrey;
     border-radius: 0 0 24px 24px;
     &:hover {
-      background-color: #e2e2e2;
+      background-color: $darkgrey;
     }
   }
   &__heading4 {
@@ -51,9 +51,21 @@ html {
       background-color: $grey;
       padding: 0px;
 
-      box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048),
-        0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
+      box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+        0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06),
+        0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
         0 50px 40px rgba(0, 0, 0, 0.12);
+
+      &:hover {
+        transition: transform 1s ease-in-out;
+        transform: scale(1.1);
+        background-color: $almostwhite;
+
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06),
+          0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+      }
     }
   }
   &__logo {
@@ -291,8 +303,6 @@ body {
 // *******************************************************************************************************************************************************
 
 @media (min-width: 650px) {
-
-
   .api {
     &__footer {
       @include grid4;
@@ -342,14 +352,11 @@ body {
     }
   }
 
-
-
   body {
     @include outBoxMobileBig;
     background-color: $white;
     border: 4px solid #171f3f;
   }
-
 
   .footer {
     @include footerMobileBig;
@@ -375,7 +382,7 @@ body {
       &--FB {
         @include heading4MobileBig;
         width: 286px;
-        color:$blueFB;
+        color: $blueFB;
       }
     }
   }
@@ -386,7 +393,7 @@ body {
     }
     &__heading3 {
       @include heading4MobileBig;
-      color:$blueFB;
+      color: $blueFB;
 
       &--frame {
         width: 286px;
@@ -436,7 +443,6 @@ body {
     }
   }
 
-
   .skills {
     @include inBoxMobileBig;
     margin-top: 196px;
@@ -470,14 +476,7 @@ body {
       }
     }
   }
-
 }
-
-
-
-
-
-
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Small Desktops  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************
@@ -546,9 +545,6 @@ body {
       }
     }
   }
-
-
- 
 
   body {
     @include outBoxDesktopSmall;
@@ -712,7 +708,6 @@ body {
       &--link {
         @include gitLink;
         padding-right: 8px;
-   
       }
       &--link2 {
         @include gitLink;
