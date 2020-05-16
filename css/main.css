@@ -334,7 +334,7 @@ html {
   background-color: #f5f7fa;
   border-radius: 0 0 24px 24px; }
   .api__footer:hover {
-    background-color: #e2e2e2; }
+    background-color: #52606d; }
 
 .api__heading4 {
   color: #171f3f;
@@ -375,6 +375,18 @@ html {
     padding: 0px;
     -webkit-box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
             box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12); }
+    .api__list--element:hover {
+      -webkit-transition: -webkit-transform 1s ease-in-out;
+      transition: -webkit-transform 1s ease-in-out;
+      -o-transition: transform 1s ease-in-out;
+      transition: transform 1s ease-in-out;
+      transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      background-color: #ffffee;
+      -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06), 0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+              box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06), 0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
 .api__logo {
   color: #171f3f;
