@@ -504,6 +504,10 @@ body {
       border-bottom: solid 2px;
       border-color: #0593fb; }
 
+.arrow {
+  width: 32px;
+  height: 32px; }
+
 .header__heading1 {
   color: #171f3f;
   font-family: "Poppins", sans-serif;

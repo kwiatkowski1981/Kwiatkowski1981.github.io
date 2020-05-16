@@ -159,6 +159,11 @@ body {
   }
 }
 
+.arrow {
+  width: 32px;
+  height: 32px;
+}
+
 .header {
   &__heading1 {
     @include heading1Mobile;
