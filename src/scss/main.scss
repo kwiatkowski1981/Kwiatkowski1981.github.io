@@ -13,6 +13,7 @@ html {
 }
 
 .api {
+
   &__code {
     vertical-align: text-bottom;
   }
@@ -25,9 +26,6 @@ html {
     justify-items: center;
     background-color: $lightgrey;
     border-radius: 0 0 24px 24px;
-    &:hover {
-      background-color: $darkgrey;
-    }
   }
   &__heading4 {
     @include heading4Mobile;
@@ -80,6 +78,7 @@ html {
     @include listParagraphMobile;
     font-weight: 300;
     margin: 0;
+
     &--link {
       @include gitLink;
       padding-right: 10px;
@@ -100,6 +99,7 @@ html {
       height: 48px;
       grid-column: 1/2;
       text-decoration: none;
+      
     }
     &--list2 {
       margin: 0;
@@ -191,11 +191,16 @@ body {
     height: 96px;
     border-radius: 100%;
     margin: 6px 0 0 6px;
+  
     &--box {
       width: 120px;
       height: 120px;
       border: solid lightgrey 6px;
       border-radius: 100%;
+      &:hover {
+        transition: transform 1s ease-in-out;
+        transform: scale(3);
+      }
     }
   }
   &__link {
@@ -491,9 +496,6 @@ body {
       height: 48px;
       justify-items: center;
       border-radius: 0 0 24px 24px;
-      &:hover {
-        background-color: #e2e2e2;
-      }
     }
     &__heading4 {
       @include heading4MobileBig;
