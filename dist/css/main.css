@@ -506,7 +506,10 @@ body {
 
 .arrow {
   width: 32px;
-  height: 32px; }
+  height: 32px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px; }
 
 .header__heading1 {
   color: #171f3f;
