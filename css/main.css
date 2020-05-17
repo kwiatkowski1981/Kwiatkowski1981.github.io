@@ -333,8 +333,6 @@ html {
   justify-items: center;
   background-color: #f5f7fa;
   border-radius: 0 0 24px 24px; }
-  .api__footer:hover {
-    background-color: #52606d; }
 
 .api__heading4 {
   color: #171f3f;
@@ -506,6 +504,13 @@ body {
       border-bottom: solid 2px;
       border-color: #0593fb; }
 
+.arrow {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px; }
+
 .header__heading1 {
   color: #171f3f;
   font-family: "Poppins", sans-serif;
@@ -553,6 +558,15 @@ body {
       height: 120px;
       border: solid lightgrey 6px;
       border-radius: 100%; }
+      .hero__avatar--box:hover {
+        -webkit-transition: -webkit-transform 1s ease-in-out;
+        transition: -webkit-transform 1s ease-in-out;
+        -o-transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
+        transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+        -webkit-transform: scale(3);
+            -ms-transform: scale(3);
+                transform: scale(3); }
   .hero__link {
     text-decoration: none; }
 
@@ -902,8 +916,6 @@ body {
     height: 48px;
     justify-items: center;
     border-radius: 0 0 24px 24px; }
-    .api__footer:hover {
-      background-color: #e2e2e2; }
   .api__heading4 {
     color: #171f3f;
     font-family: "Poppins", sans-serif;
