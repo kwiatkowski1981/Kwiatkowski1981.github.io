@@ -708,7 +708,6 @@ body {
     display: grid;
     -ms-grid-columns: 2fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr;
-    justify-items: center;
     height: 64px;
     border-radius: 0 0 24px 24px; }
   .api__heading4 {
@@ -935,7 +934,6 @@ body {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     height: 48px;
-    justify-items: center;
     border-radius: 0 0 24px 24px; }
   .api__heading4 {
     color: #171f3f;
@@ -1160,7 +1158,6 @@ body {
     display: grid;
     -ms-grid-columns: 1.9fr 1.1fr 1fr;
     grid-template-columns: 1.9fr 1.1fr 1fr;
-    justify-items: center;
     height: 64px;
     border-radius: 0 0 24px 24px; }
   .api__heading4 {
