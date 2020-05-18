@@ -12,6 +12,24 @@ html {
   box-sizing: inherit;
 }
 
+.arrowup{
+  opacity: 0;
+
+}
+.arrowup--visible {
+  width: 50px;
+  font-size: 40px;
+  height: 60px;
+  transition: opacity 1500ms;
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  background-image: url("../assets/img/arrow2.svg");
+  background-repeat: no-repeat;
+  color: black;
+}
+
 .api {
 
   &__code {
@@ -54,9 +72,10 @@ html {
         0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
         0 50px 40px rgba(0, 0, 0, 0.12);
 
-      &:hover {
         transition: transform 1s ease-in-out;
-        transform: scale(1.1);
+      &:hover {
+       
+        transform: scale(1.15) rotate(360deg);
         background-color: $almostwhite;
 
         box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -83,12 +102,18 @@ html {
       @include gitLink;
       padding-right: 10px;
       margin: 0;
+      &:hover {
+        color: $darkblue;
+      }
     }
     &--link2 {
       @include gitLink;
       padding-left: 32px;
       padding-right: 32px;
       border-right: solid 2px $middlegrey;
+      &:hover {
+        color: $darkblue;
+      }
     }
   }
   &__nav {
@@ -308,6 +333,9 @@ body {
     }
   }
 }
+
+
+
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Big Mobiles  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************
