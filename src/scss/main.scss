@@ -346,7 +346,6 @@ body {
   .api {
     &__footer {
       @include grid4;
-      justify-items: center;
       height: 64px;
       border-radius: 0 0 24px 24px;
     }
@@ -529,7 +528,6 @@ body {
     &__footer {
       @include grid2;
       height: 48px;
-      justify-items: center;
       border-radius: 0 0 24px 24px;
     }
     &__heading4 {
@@ -717,7 +715,6 @@ body {
   .api {
     &__footer {
       @include grid5;
-      justify-items: center;
       height: 64px;
       border-radius: 0 0 24px 24px;
     }
