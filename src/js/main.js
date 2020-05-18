@@ -36,7 +36,7 @@ fetch(
     for (const repo of repos) {
       const { description, name, html_url, download_html, homepage } = repo;
 
-      list.innerHTML += `<li class="api__list--element api__anime"> 
+      list.innerHTML += `<li class="api__list--element"> 
             <div class="api__main">
             
 
@@ -60,11 +60,11 @@ fetch(
             <h4 class="api__heading4"> ${name}</h4>
             <p class="api__paragraph"> ${description}</p>
             </div>
-            <div class="api__footer api__anime--footer">
-            <a href="${homepage}" class="api__nav--list1"> <p class="api__paragraph--link api__paragraph--link2 api__anime"> 
+            <div class="api__footer">
+            <a href="${homepage}" class="api__nav--list1"> <p class="api__paragraph--link api__paragraph--link2"> 
             <img src="../assets/img/demo1.svg" alt="small pc" class="api__demo"> Demo </p>
             </a>
-            <a href="${html_url}" class="api__nav--list2"> <p class="api__paragraph--link api__anime">
+            <a href="${html_url}" class="api__nav--list2"> <p class="api__paragraph--link">
             <img src="../assets/img/code1.svg" alt="code icon" class="api__code">  GitHub </p>
             </a> 
 

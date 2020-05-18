@@ -41,7 +41,6 @@ html {
   &__footer {
     @include grid2;
     height: 48px;
-    justify-items: center;
     background-color: $lightgrey;
     border-radius: 0 0 24px 24px;
   }

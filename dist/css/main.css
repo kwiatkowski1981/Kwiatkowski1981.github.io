@@ -348,7 +348,6 @@ html {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 48px;
-  justify-items: center;
   background-color: #f5f7fa;
   border-radius: 0 0 24px 24px; }
 
