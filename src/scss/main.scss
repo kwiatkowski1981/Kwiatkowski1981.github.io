@@ -30,6 +30,8 @@ html {
   border-radius: 50%;
   &:hover {
     @include arrowUpHover;
+    color: #0593fb;
+    font-weight: 600;
   }
 }
 
@@ -66,14 +68,14 @@ html {
       flex-flow: column nowrap;
       justify-content: space-between;
       // background-color: $grey;
-      @include apiCard;
+      @include apiCardColor;
       padding: 0px;
       @include apiCardShadow;
 
-      transition: transform 1s ease-in-out;
+      transition: transform 2s ease-in-out;
       &:hover {
         transform: scale(1.15) rotate(360deg);
-        @include apiCardHover;
+        @include apiCardColorHover;
         @include apiCardShadowHover;
 
       }
@@ -98,6 +100,7 @@ html {
       margin: 0;
       &:hover {
         color: $darkblue;
+        font-weight: 600;
       }
     }
     &--link2 {
@@ -107,6 +110,7 @@ html {
       border-right: solid 2px $middlegrey;
       &:hover {
         color: $darkblue;
+        font-weight: 600;
       }
     }
   }
