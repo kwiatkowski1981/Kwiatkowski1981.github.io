@@ -29,8 +29,8 @@ html {
   right: 30px;
   border-radius: 50%;
   &:hover {
-    @include arrowUpHover;
-    color: #0593fb;
+    // @include arrowUpHover;
+    // color: #0593fb;
     font-weight: 600;
   }
 }
@@ -72,7 +72,7 @@ html {
       padding: 0px;
       @include apiCardShadow;
 
-      transition: transform 2s ease-in-out;
+      transition: transform 1s ease-in-out;
       &:hover {
         transform: scale(1.15) rotate(360deg);
         @include apiCardColorHover;

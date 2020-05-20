@@ -344,11 +344,6 @@ html {
   right: 30px;
   border-radius: 50%; }
   .arrowup--visible:hover {
-    background: white;
-    background: -o-radial-gradient(circle, white 0%, #83efff 100%);
-    background: radial-gradient(circle, white 0%, #83efff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#83efff",GradientType=1);
-    color: #0593fb;
     font-weight: 600; }
 
 .api__code {
@@ -409,11 +404,11 @@ html {
     padding: 0px;
     -webkit-box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
             box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
-    -webkit-transition: -webkit-transform 2s ease-in-out;
-    transition: -webkit-transform 2s ease-in-out;
-    -o-transition: transform 2s ease-in-out;
-    transition: transform 2s ease-in-out;
-    transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out; }
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     .api__list--element:hover {
       -webkit-transform: scale(1.15) rotate(360deg);
           -ms-transform: scale(1.15) rotate(360deg);
