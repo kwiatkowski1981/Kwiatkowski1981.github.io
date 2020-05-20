@@ -12,26 +12,28 @@ html {
   box-sizing: inherit;
 }
 
-.arrowup{
+.arrowup {
   opacity: 0;
-
 }
 .arrowup--visible {
-  width: 50px;
-  font-size: 40px;
+  @include arrowUp;
+  @include arrowUpFont;
+  text-align: center;
+  padding-top: 16px;
+  width: 60px;
   height: 60px;
   transition: opacity 1500ms;
   opacity: 1;
   position: fixed;
   bottom: 10px;
   right: 30px;
-  background-image: url("../assets/img/arrow2.svg");
-  background-repeat: no-repeat;
-  color: black;
+  border-radius: 50%;
+  &:hover {
+    @include arrowUpHover;
+  }
 }
 
 .api {
-
   &__code {
     vertical-align: text-bottom;
   }
@@ -41,7 +43,7 @@ html {
   &__footer {
     @include grid2;
     height: 48px;
-    background-color: $lightgrey;
+    background-color: $white;
     border-radius: 0 0 24px 24px;
   }
   &__heading4 {
@@ -63,24 +65,17 @@ html {
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      background-color: $grey;
+      // background-color: $grey;
+      @include apiCard;
       padding: 0px;
+      @include apiCardShadow;
 
-      box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034),
-        0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06),
-        0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
-        0 50px 40px rgba(0, 0, 0, 0.12);
-
-        transition: transform 1s ease-in-out;
+      transition: transform 1s ease-in-out;
       &:hover {
-       
         transform: scale(1.15) rotate(360deg);
-        background-color: $almostwhite;
+        @include apiCardHover;
+        @include apiCardShadowHover;
 
-        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-          0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06),
-          0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086),
-          0 100px 80px rgba(0, 0, 0, 0.12);
       }
     }
   }
@@ -123,7 +118,6 @@ html {
       height: 48px;
       grid-column: 1/2;
       text-decoration: none;
-      
     }
     &--list2 {
       margin: 0;
@@ -223,7 +217,7 @@ body {
     height: 96px;
     border-radius: 100%;
     margin: 6px 0 0 6px;
-  
+
     &--box {
       width: 120px;
       height: 120px;
@@ -332,9 +326,6 @@ body {
     }
   }
 }
-
-
-
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Big Mobiles  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // *******************************************************************************************************************************************************

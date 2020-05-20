@@ -322,8 +322,18 @@ html {
   opacity: 0; }
 
 .arrowup--visible {
-  width: 50px;
-  font-size: 40px;
+  background: white;
+  background: -o-radial-gradient(circle, white 37%, #bec2c6 100%);
+  background: radial-gradient(circle, white 37%, #bec2c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#bec2c6",GradientType=1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  color: #171f3f;
+  text-align: center;
+  padding-top: 16px;
+  width: 60px;
   height: 60px;
   -webkit-transition: opacity 1500ms;
   -o-transition: opacity 1500ms;
@@ -332,9 +342,12 @@ html {
   position: fixed;
   bottom: 10px;
   right: 30px;
-  background-image: url("../assets/img/arrow2.svg");
-  background-repeat: no-repeat;
-  color: black; }
+  border-radius: 50%; }
+  .arrowup--visible:hover {
+    background: #bec2c6;
+    background: -o-radial-gradient(circle, #bec2c6 0%, white 100%);
+    background: radial-gradient(circle, #bec2c6 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bec2c6",endColorstr="#ffffff",GradientType=1); }
 
 .api__code {
   vertical-align: text-bottom; }
@@ -348,7 +361,7 @@ html {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 48px;
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   border-radius: 0 0 24px 24px; }
 
 .api__heading4 {
@@ -386,7 +399,11 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(24, 41, 67, 0.09);
+    background: white;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, white), to(#cbd2d9));
+    background: -o-linear-gradient(bottom, white 23%, #cbd2d9 100%);
+    background: linear-gradient(0deg, white 23%, #cbd2d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cbd2d9",GradientType=1);
     padding: 0px;
     -webkit-box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
             box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06), 0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
@@ -399,7 +416,11 @@ html {
       -webkit-transform: scale(1.15) rotate(360deg);
           -ms-transform: scale(1.15) rotate(360deg);
               transform: scale(1.15) rotate(360deg);
-      background-color: #ffffee;
+      background: white;
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, white), to(#aff1fa));
+      background: -o-linear-gradient(bottom, white 23%, #aff1fa 100%);
+      background: linear-gradient(0deg, white 23%, #aff1fa 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#aff1fa",GradientType=1);
       -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06), 0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
               box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06), 0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
@@ -466,7 +487,7 @@ html {
 
 body {
   min-width: 320px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: none; }
 
 .footer {
@@ -495,7 +516,7 @@ body {
     font-weight: 600;
     font-size: 22px;
     line-height: 32px;
-    color: #fff; }
+    color: #ffffff; }
   .footer__link {
     text-decoration: none;
     -ms-grid-column: 1;
@@ -509,7 +530,7 @@ body {
     font-weight: 200;
     font-size: 16px;
     line-height: 26px;
-    color: #fff; }
+    color: #ffffff; }
     .footer__paragraph--FB {
       margin-top: 40px;
       color: #0593fb;
@@ -764,7 +785,7 @@ body {
   body {
     width: 650px;
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 4px solid #171f3f; }
   .footer {
     width: 642px;
@@ -998,7 +1019,7 @@ body {
   body {
     width: 900px;
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 8px solid #171f3f; }
   .footer {
     width: 884px;
@@ -1213,7 +1234,7 @@ body {
   body {
     width: 1440px;
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 16px solid #171f3f; }
   .footer {
     width: 1424px;

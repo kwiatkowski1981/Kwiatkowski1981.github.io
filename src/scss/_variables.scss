@@ -1,4 +1,4 @@
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         C O L O R S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         C O L O R S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 $footerBackground: #171f3f;
 $blueFB: #0593fb;
 $grey: rgba(24, 41, 67, 0.09);
@@ -7,9 +7,106 @@ $darkblue: #171f3f;
 $black: #000;
 $lightgrey: #f5f7fa;
 $middlegrey: #cbd2d9;
-$white: #fff;
-$almostwhite: #ffffee;
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      B O X       S I Z I N G      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$white: #ffffff;
+
+@mixin arrowUp {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 37%,
+    rgba(190, 194, 198, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 37%,
+    rgba(190, 194, 198, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 37%,
+    rgba(190, 194, 198, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#bec2c6",GradientType=1);
+}
+
+@mixin arrowUpHover {
+  background: rgb(190, 194, 198);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(190, 194, 198, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(190, 194, 198, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(190, 194, 198, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bec2c6",endColorstr="#ffffff",GradientType=1);
+}
+
+@mixin apiCard {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(203, 210, 217, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(203, 210, 217, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(203, 210, 217, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cbd2d9",GradientType=1);
+}
+
+@mixin apiCardHover {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(175, 241, 250, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(175, 241, 250, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(175, 241, 250, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#aff1fa",GradientType=1);
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      A P I      C A R D      S C H A D O W      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+@mixin apiCardShadow {
+  box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+    0 3.3px 2.6px rgba(0, 0, 0, 0.048), 0 6.3px 5px rgba(0, 0, 0, 0.06),
+    0 11.1px 9px rgba(0, 0, 0, 0.072), 0 21px 17px rgba(0, 0, 0, 0.086),
+    0 50px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+@mixin apiCardShadowHover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.6px 5.2px rgba(0, 0, 0, 0.048), 0 12.6px 10px rgba(0, 0, 0, 0.06),
+  0 22.2px 18px rgba(0, 0, 0, 0.072), 0 42px 34px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      B O X       S I Z I N G      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 $heroDesktop: 780px;
 $heroDesktopSmall: 650px;
@@ -33,7 +130,6 @@ $heroMobileBig: 550px;
   margin: auto;
 }
 
-
 @mixin footerMobileBig {
   width: 642px;
   margin: auto;
@@ -50,11 +146,9 @@ $heroMobileBig: 550px;
   width: 100vw;
 }
 
-
 @mixin inBox3DesktopSmall {
   width: 750px;
-} 
-
+}
 
 @mixin outBoxDesktopSmall {
   width: 900px;
@@ -64,12 +158,12 @@ $heroMobileBig: 550px;
 @mixin footerDesktopSmall {
   width: 884px;
   margin: auto;
-} 
+}
 
 @mixin footerDesktop {
   width: 1424px;
   margin: auto;
-} 
+}
 
 // >>>>>>>>>>>>>>>>>>>>>>>  desktop    <<<<<<<<<<<<<<<<<<<<<
 @mixin inBox {
@@ -142,6 +236,14 @@ $heroMobileBig: 550px;
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        F O N T S      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+@mixin arrowUpFont {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  color: $darkblue;
+}
 
 @mixin gitLink {
   font-family: "Poppins", sans-serif;
@@ -222,8 +324,7 @@ $heroMobileBig: 550px;
   line-height: 26px;
 }
 
-@mixin heading4DesktopSmall{
-
+@mixin heading4DesktopSmall {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -244,8 +345,6 @@ $heroMobileBig: 550px;
   line-height: 30px;
   color: $darkgrey;
 }
-
-
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      F O N T S     M O B I L E      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
