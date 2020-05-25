@@ -74,7 +74,7 @@ html {
 
       transition: transform 1s ease-in-out;
       &:hover {
-        transform: scale(1.15) rotate(360deg);
+        transform: scale(1.15);
         @include apiCardColorHover;
         @include apiCardShadowHover;
 
