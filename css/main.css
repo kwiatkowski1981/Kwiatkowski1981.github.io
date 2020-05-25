@@ -410,9 +410,9 @@ html {
     transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     .api__list--element:hover {
-      -webkit-transform: scale(1.15) rotate(360deg);
-          -ms-transform: scale(1.15) rotate(360deg);
-              transform: scale(1.15) rotate(360deg);
+      -webkit-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+              transform: scale(1.15);
       background: white;
       background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, white), to(#aff1fa));
       background: -o-linear-gradient(bottom, white 23%, #aff1fa 100%);
