@@ -61,9 +61,12 @@ fetch(
             <p class="api__paragraph"> ${description}</p>
             </div>
             <div class="api__footer">
+            
             <a href="${homepage}" class="api__nav--list1"> <p class="api__paragraph--link api__paragraph--link2"> 
-            <img src="../assets/img/demo1.svg" alt="small pc" class="api__demo"> Demo </p>
+            <img src="../assets/img/demo1.svg" alt="small pc icon" class="api__demo"> Demo </p>
             </a>
+            
+            
             <a href="${html_url}" class="api__nav--list2"> <p class="api__paragraph--link">
             <img src="../assets/img/code1.svg" alt="code icon" class="api__code">  GitHub </p>
             </a> 
