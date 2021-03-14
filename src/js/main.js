@@ -95,8 +95,7 @@ fetch(
 
 // list.innerHTML ******************************************************************************************************
 
-            console.log(`API worked correctly, all jobs are done.`);
-
+            // console.log(`API worked correctly, all jobs are done.`);
         }
     })
     .catch(err => {
