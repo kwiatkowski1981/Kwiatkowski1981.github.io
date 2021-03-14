@@ -111,4 +111,5 @@ window.addEventListener("scroll", () => {
         arrowup.classList.add("arrowup");
     }
 });
+
 console.log(`%c pozdro dla %c Matiego %c (https://maczi01.github.io/) z podziękowaniem za scrolera 😂`, "color: yellow", "color: red", "color: yellow")
