@@ -85,10 +85,8 @@ fetch(
             divApiMain.appendChild(apiHeading4);
             divApiMain.appendChild(apiParagraph);
             liElement.appendChild(apiFooterDiv);
-
             if (homepage !== null) {
-
-            apiFooterDiv.appendChild(apiDemoLink);
+                apiFooterDiv.appendChild(apiDemoLink);
             }
             apiFooterDiv.appendChild(apiGithubLink);
 
